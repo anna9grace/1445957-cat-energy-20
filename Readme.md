@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Родионова](https://up.htmlacademy.ru/adaptive/20/user/1445957).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Воздраганова] (https://htmlacademy.ru/profile/id1227143).
 
 ---
 
