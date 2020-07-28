@@ -15,18 +15,55 @@
       </button>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item">
             <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a>Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="program-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <fieldset class="program-form__general general">
+          <legend class="visually-hidden">Общая информация</legend>
+          <label>Имя:*<input class="general__field" type="text" name="name" placeholder="Барсик"></label>
+          <label>Вес (кг):*<input class="general__field" type="text" name="weight" placeholder="7"></label>
+          <label>Возраст (лет):<input class="general__field" type="text" name="age" placeholder="7"></label>
+        </fieldset>
+        <fieldset class="program-form__goal goal">
+          <legend class="visually-hidden">Выберите цель</legend>
+              <label class="goal__option"><input class="visually-hidden" type="radio" name="program-goal" value="Похудение" checked>Похудение</label>
+              <label class="goal__option"><input class="visually-hidden" type="radio" name="program-goal" value="Набор массы">Набор массы</label>
+              <label class="goal__option"><input class="visually-hidden" type="radio" name="program-goal" value="Не знаю">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="program-form__owner owner">
+          <legend class="owner__title">Контактные данные (владельца кота)</legend>
+          <label>E-mail:*<input class="owner__field" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
+          <label>Телефон:*<input class="owner__field" type="tel" name="tel" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90"></label>
+        </fieldset>
+        <fieldset class="program-form__comments comments">
+          <legend class="comments__title">Комментарий</legend>
+          <label class="visually-hidden" for="comment-field">Расскажите обо всех повадках кота</label>
+          <textarea class="comments__field" name="comments" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="program-form__additional additional">
+          <legend class="additional__title">Дополнительно</legend>
+          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="sugar-substitute" checked>Cахарозаменитель</label>
+          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="pure-water">Питьевая вода</label>
+          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="milk">Молоко</label>
+          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="vitamins">Витамины</label>
+        </fieldset>
+        <button class="program-form__send button" type="submit">Отправить заявку</button>
+        <small class="program-form__footnote">* — Обязательные поля</small>
+      </form>
+    </main>
     <footer class="page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
