@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo logo--small" href="index.html" aria-label="На главную">
+      <a class="page-header__logo logo logo--small" href="index.html" aria-label="На главную">
         <img class="logo__icon" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип">
         <img class="logo__title" src="https://via.placeholder.com/101x18" width="101" height="18" alt="интернет-магазин Cat Energy">
       </a>
@@ -39,9 +39,18 @@
         </fieldset>
         <fieldset class="program-form__goal goal">
           <legend class="visually-hidden">Выберите цель</legend>
-              <label class="goal__option"><input class="visually-hidden" type="radio" name="program-goal" value="Похудение" checked>Похудение</label>
-              <label class="goal__option"><input class="visually-hidden" type="radio" name="program-goal" value="Набор массы">Набор массы</label>
-              <label class="goal__option"><input class="visually-hidden" type="radio" name="program-goal" value="Не знаю">Не знаю (Нужен ваш совет)</label>
+          <div>
+            <input class="visually-hidden" type="radio" name="program-goal" id="loosing" value="Похудение" checked>
+            <label class="goal__option" for="loosing">Похудение</label>
+          </div>
+          <div>
+            <input class="visually-hidden" type="radio" name="program-goal" id="gaining" value="Набор массы">
+            <label class="goal__option" for="gaining">Набор массы</label>
+          </div>
+          <div>
+            <input class="visually-hidden" type="radio" name="program-goal" id="noidea" value="Не знаю">
+            <label class="goal__option" for="noidea">Не знаю (Нужен ваш совет)</label>
+          </div>
         </fieldset>
         <fieldset class="program-form__owner owner">
           <legend class="owner__title">Контактные данные (владельца кота)</legend>
@@ -55,10 +64,22 @@
         </fieldset>
         <fieldset class="program-form__additional additional">
           <legend class="additional__title">Дополнительно</legend>
-          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="sugar-substitute" checked>Cахарозаменитель</label>
-          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="pure-water">Питьевая вода</label>
-          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="milk">Молоко</label>
-          <label class="additional__option"><input class="visually-hidden" type="checkbox" name="vitamins">Витамины</label>
+          <div>
+            <input class="visually-hidden" type="checkbox" name="sugar-substitute" id="no-sugar" checked>
+            <label class="additional__option" for="no-sugar">Cахарозаменитель</label>
+          </div>
+          <div>
+            <input class="visually-hidden" type="checkbox" name="pure-water" id="pure-water">
+            <label class="additional__option" for="pure-water">Питьевая вода</label>
+          </div>
+          <div>
+            <input class="visually-hidden" type="checkbox" name="milk" id="milk">
+            <label class="additional__option" for="milk">Молоко</label>
+          </div>
+          <div>
+            <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+            <label class="additional__option" for="vitamins">Витамины</label>
+          </div>
         </fieldset>
         <button class="program-form__send button" type="submit">Отправить заявку</button>
         <small class="program-form__footnote">* — Обязательные поля</small>
