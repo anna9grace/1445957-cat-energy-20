@@ -1,0 +1,7 @@
+.strategies__list {
+  @include list-reset;
+}
+
+.strategies__item {
+  background-color: $basic-bg-color;
+}
