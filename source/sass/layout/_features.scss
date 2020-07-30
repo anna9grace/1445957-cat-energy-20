@@ -1,3 +1,8 @@
 .features__list {
   @include list-reset;
 }
+
+.features__text {
+  font-family: Arial;
+}
+

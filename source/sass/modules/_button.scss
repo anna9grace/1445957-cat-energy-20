@@ -1,0 +1,13 @@
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $basic-theme-color;
+  color: $font-color-light;
+
+  &--light {
+    background-color: $basic-bg-color;
+    color: $main-font-color;
+  }
+}

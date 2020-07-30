@@ -3,23 +3,10 @@
 @import "fonts.scss";
 @import "page.scss";
 
-@import "layout/page-header.scss";
-@import "layout/page-footer.scss";
-@import "layout/page-main.scss";
-@import "layout/promo.scss";
-@import "layout/features.scss";
-@import "layout/strategies.scss";
-@import "layout/example.scss";
-@import "layout/program-form.scss";
-@import "layout/catalog.scss";
-@import "layout/add-ons.scss";
-@import "layout/main-nav.scss";
-@import "layout/contacts.scss";
-@import "layout/side-links.scss";
-
 @import "modules/link.scss";
 @import "modules/logo.scss";
 @import "modules/button.scss";
+@import "modules/title.scss";
 @import "modules/slider.scss";
 @import "modules/stats.scss";
 @import "modules/toggles.scss";
@@ -34,3 +21,17 @@
 @import "modules/add-product.scss";
 @import "modules/characteristics.scss";
 @import "modules/action.scss";
+
+@import "layout/page-header.scss";
+@import "layout/page-footer.scss";
+@import "layout/page-main.scss";
+@import "layout/promo.scss";
+@import "layout/features.scss";
+@import "layout/strategies.scss";
+@import "layout/example.scss";
+@import "layout/program-form.scss";
+@import "layout/catalog.scss";
+@import "layout/add-ons.scss";
+@import "layout/main-nav.scss";
+@import "layout/contacts.scss";
+@import "layout/side-links.scss";

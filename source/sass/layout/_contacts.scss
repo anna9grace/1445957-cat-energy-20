@@ -1,3 +1,18 @@
 .contacts {
   width: 100%;
+  min-height: 362px;
+  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
+  background-size: cover;
+}
+
+.contacts__wrapper {
+  background-color: $font-color-light;
+}
+
+.contacts__invitation {
+  font-family: Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
 }

@@ -5,3 +5,21 @@
 .strategies__item {
   background-color: $basic-bg-color;
 }
+
+.strategies__title,
+.strategies__link {
+  text-transform: uppercase;
+  color: $font-color-dark;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+}
+
+.strategies__link {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.strategies__description {
+  font-family: Arial;
+}
