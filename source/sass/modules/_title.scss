@@ -1,5 +1,6 @@
 .title {
   font-weight: 400;
+
   @include font-sizes(36px, 36px);
   color: $font-color-dark;
   margin-top: 0;

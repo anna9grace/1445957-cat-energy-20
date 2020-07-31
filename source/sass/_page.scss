@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $main-font-family, $secondary-font-family, sans-serif;
+
   @include font-sizes();
   font-weight: 400;
   color: $main-font-color;

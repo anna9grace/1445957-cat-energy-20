@@ -1,5 +1,6 @@
 .main-nav {
   font-weight: 500;
+
   @include font-sizes(20px, 20px);
   text-transform: uppercase;
   color: $font-color-dark;

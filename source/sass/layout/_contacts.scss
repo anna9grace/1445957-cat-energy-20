@@ -9,6 +9,7 @@
 
 .contacts__invitation {
   font-family: $main-font-family;
+
   @include font-sizes(16px, 18px);
   text-transform: uppercase;
   color: $additional-dark;

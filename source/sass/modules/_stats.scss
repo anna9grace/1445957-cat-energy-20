@@ -1,11 +1,13 @@
 .stats {
   font-family: $secondary-font-family;
+
   @include font-sizes(12px, 12px);
   text-align: center;
 }
 
 .stats__data {
   font-family: $main-font-family;
+
   @include font-sizes(24px, 24px);
   color: $font-color-dark;
   text-transform: uppercase;

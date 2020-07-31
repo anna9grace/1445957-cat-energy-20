@@ -15,6 +15,7 @@
 .strategies__link {
   text-transform: uppercase;
   color: $font-color-dark;
+
   @include font-sizes(24px, 37px);
   font-weight: 400;
 }
