@@ -19,7 +19,9 @@ img {
   height: auto;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -41,4 +43,16 @@ img {
 
 .page {
   height: 100%;
+}
+
+.page__body > * {
+  outline: 2px solid red;
+}
+
+.page__body > * > * {
+  outline: 1px solid greenyellow;
+}
+
+.page__body > * > * > * {
+  outline: 1px solid violet;
 }

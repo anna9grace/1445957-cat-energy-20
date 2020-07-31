@@ -1,13 +1,10 @@
 .contacts {
-  min-height: 362px;
-  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
-  background-size: cover;
   font-family: $secondary-font-family;
   line-height: 20px;
 }
 
 .contacts__wrapper {
-  background-color: $font-color-light;
+  padding: 28px 0;
 }
 
 .contacts__invitation {
@@ -15,4 +12,15 @@
   @include font-sizes(16px, 18px);
   text-transform: uppercase;
   color: $additional-dark;
+  margin: 0;
+}
+
+.contacts__adress {
+  margin: 0;
+}
+
+.contacts__map {
+  min-height: 362px;
+  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
+  background-size: cover;
 }

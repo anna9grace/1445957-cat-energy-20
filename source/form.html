@@ -9,47 +9,47 @@
   <body class="page__body">
 
     <header class="page-header">
-      <div class="container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo logo logo--small" href="index.html" aria-label="На главную">
           <img class="logo__icon" src="img/logo-mobile.svg" width="190" height="37" alt="Логотип">
         </a>
         <button class="page-header__menu-toggle" type="button">
           <span class="visually-hidden">Показать меню</span>
         </button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="link">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
 
-      <div class="container">
+      <div class="page-main__programm container">
         <h1 class="page-main__title title">Подбор программы</h1>
         <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="program-form__general">
+        <fieldset class="program-form__general fieldset">
           <div class="container">
-            <legend class="visually-hidden">Общая информация</legend>
-            <label>Имя:*<input class="program-form__field" type="text" name="name" placeholder="Барсик"></label>
-            <label>Вес (кг):*<input class="program-form__field" type="text" name="weight" placeholder="7"></label>
-            <label>Возраст (лет):<input class="program-form__field" type="text" name="age" placeholder="7"></label>
+            <h3 class="visually-hidden">Общая информация</h3>
+            <label>Имя:*<input class="program-form__field fieldset__text" type="text" name="name" placeholder="Барсик"></label>
+            <label>Вес (кг):*<input class="program-form__field fieldset__text" type="text" name="weight" placeholder="7"></label>
+            <label>Возраст (лет):<input class="program-form__field fieldset__text" type="text" name="age" placeholder="7"></label>
           </div>
         </fieldset>
-        <fieldset class="program-form__goal">
+        <fieldset class="program-form__goal fieldset">
           <div class="container">
-            <legend class="visually-hidden">Выберите цель</legend>
+            <h3 class="visually-hidden">Выберите цель</h3>
             <div>
               <input class="visually-hidden" type="radio" name="program-goal" id="loosing" value="Похудение" checked>
               <label class="program-form__goal-option" for="loosing">Похудение</label>
@@ -66,21 +66,21 @@
         </fieldset>
         <fieldset class="program-form__owner">
           <div class="container">
-            <legend class="program-form__title">Контактные данные (владельца кота)</legend>
-            <label>E-mail:*<input class="program-form__field" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
-            <label>Телефон:*<input class="program-form__field" type="tel" name="tel" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90"></label>
+            <h3 class="program-form__title fieldset">Контактные данные (владельца кота)</h3>
+            <label>E-mail:*<input class="program-form__field fieldset__text" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
+            <label>Телефон:*<input class="program-form__field fieldset__text" type="tel" name="tel" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90"></label>
           </div>
         </fieldset>
-        <fieldset class="program-form__comments">
+        <fieldset class="program-form__comments fieldset">
           <div class="container">
-            <legend class="program-form__title">Комментарий</legend>
+            <h3 class="program-form__title">Комментарий</h3>
             <label class="visually-hidden" for="comment-field">Расскажите обо всех повадках кота</label>
-            <textarea class="program-form__textarea" name="comments" id="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="program-form__textarea fieldset__text" name="comments" id="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="program-form__additional">
           <div class="container">
-            <legend class="program-form__title">Дополнительно</legend>
+            <h3 class="program-form__title">Дополнительно</h3>
             <div>
               <input class="visually-hidden" type="checkbox" name="sugar-substitute" id="no-sugar" checked>
               <label class="program-form__add-option" for="no-sugar">Cахарозаменитель</label>
@@ -104,7 +104,6 @@
           <small class="program-form__footnote">* — Обязательные поля</small>
         </div>
       </form>
-      </div>
     </main>
 
     <footer class="page-footer">
@@ -114,6 +113,9 @@
         <div class="contacts__wrapper container">
           <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+          <!-- интерактивная карта -->
         </div>
       </section>
 

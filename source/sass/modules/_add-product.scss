@@ -1,6 +1,8 @@
 .add-product {
   font-family: $secondary-font-family;
   line-height: 20px;
+  padding: 13px 0 19px 0;
+  border-top: 1px solid #cdcdcd;
 }
 
 .add-product__name {
@@ -9,4 +11,5 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $font-color-medium;
+  margin: 0;
 }

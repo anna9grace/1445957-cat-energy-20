@@ -1,5 +1,5 @@
 .characteristics {
-  font-family: Arial;
+  font-family: $secondary-font-family;
   @include font-sizes(12px, 16px);
 }
 

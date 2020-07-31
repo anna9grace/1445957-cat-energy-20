@@ -1,9 +1,14 @@
+.strategies {
+  margin-bottom: 27px;
+}
+
 .strategies__list {
   @include list-reset;
 }
 
 .strategies__item {
   background-color: $basic-bg-color;
+  padding: 18px 19px;
 }
 
 .strategies__title,

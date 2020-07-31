@@ -3,8 +3,14 @@
   @include font-sizes(20px, 20px);
   text-transform: uppercase;
   color: $font-color-dark;
+  text-align: center;
 }
 
 .main-nav__list {
   @include list-reset;
+}
+
+.main-nav__item {
+  padding: 0 20px;
+  border-top: 1px solid #e6e6e6;
 }
