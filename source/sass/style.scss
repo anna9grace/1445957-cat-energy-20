@@ -3,25 +3,6 @@
 @import "fonts.scss";
 @import "page.scss";
 
-@import "modules/link.scss";
-@import "modules/logo.scss";
-@import "modules/button.scss";
-@import "modules/title.scss";
-@import "modules/slider.scss";
-@import "modules/stats.scss";
-@import "modules/toggles.scss";
-@import "modules/socials.scss";
-@import "modules/copyright.scss";
-@import "modules/general.scss";
-@import "modules/goal.scss";
-@import "modules/owner.scss";
-@import "modules/comments.scss";
-@import "modules/additional.scss";
-@import "modules/product.scss";
-@import "modules/add-product.scss";
-@import "modules/characteristics.scss";
-@import "modules/action.scss";
-
 @import "layout/page-header.scss";
 @import "layout/page-footer.scss";
 @import "layout/page-main.scss";
@@ -35,3 +16,18 @@
 @import "layout/main-nav.scss";
 @import "layout/contacts.scss";
 @import "layout/side-links.scss";
+@import "layout/show-more.scss";
+
+@import "modules/link.scss";
+@import "modules/logo.scss";
+@import "modules/button.scss";
+@import "modules/title.scss";
+@import "modules/slider.scss";
+@import "modules/stats.scss";
+@import "modules/toggles.scss";
+@import "modules/socials.scss";
+@import "modules/copyright.scss";
+@import "modules/product.scss";
+@import "modules/add-product.scss";
+@import "modules/characteristics.scss";
+@import "modules/action.scss";

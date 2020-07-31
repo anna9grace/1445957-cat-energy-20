@@ -3,10 +3,9 @@ body {
   min-height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 14px;
+  font-family: $main-font-family, $secondary-font-family, sans-serif;
+  @include font-sizes();
   font-weight: 400;
-  line-height: 18px;
   color: $main-font-color;
 }
 

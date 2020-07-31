@@ -5,18 +5,15 @@
 }
 
 .promo__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: inherit;
+  @include font-sizes(36px, 36px);
+  font-weight: 400;
 }
 
 .promo__slogan {
-  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 }
 
 .promo__link {
-  font-size: 14px;
-  line-height: 18px;
+  @include font-sizes(14px, 18px);
 }

@@ -1,14 +1,12 @@
 .stats {
-  font-family: Arial;
-  font-size: 12px;
-  line-height: 12px;
+  font-family: $secondary-font-family;
+  @include font-sizes(12px, 12px);
   text-align: center;
 }
 
 .stats__data {
-  font-family: Oswald;
-  font-size: 24px;
-  line-height: 24px;
+  font-family: $main-font-family;
+  @include font-sizes(24px, 24px);
   color: $font-color-dark;
   text-transform: uppercase;
 }

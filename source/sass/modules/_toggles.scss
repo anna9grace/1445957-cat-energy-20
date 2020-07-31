@@ -1,6 +1,5 @@
 .toggles {
-  font-size: 16px;
-  line-height: 20px;
+  @include font-sizes(16px, 20px);
   text-align: center;
   text-transform: uppercase;
   color: $font-color-dark;

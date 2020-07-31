@@ -1,4 +1,8 @@
 .action {
   min-height: 289px;
   background: $basic-theme-color url(../../img/gift-photo-mobile@1x.jpg) center center no-repeat;
+  font-family: $secondary-font-family;
+  @include font-sizes(16px, 20px);
+  text-align: center;
+  color: $font-color-light;
 }

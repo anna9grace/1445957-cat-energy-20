@@ -1,8 +1,9 @@
 .contacts {
-  width: 100%;
   min-height: 362px;
   background: url("../../img/bg-map-mobile@1x.png") no-repeat;
   background-size: cover;
+  font-family: $secondary-font-family;
+  line-height: 20px;
 }
 
 .contacts__wrapper {
@@ -10,9 +11,8 @@
 }
 
 .contacts__invitation {
-  font-family: Oswald;
-  font-size: 16px;
-  line-height: 18px;
+  font-family: $main-font-family;
+  @include font-sizes(16px, 18px);
   text-transform: uppercase;
-  color: #111111;
+  color: $additional-dark;
 }

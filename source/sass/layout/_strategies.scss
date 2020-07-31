@@ -10,16 +10,14 @@
 .strategies__link {
   text-transform: uppercase;
   color: $font-color-dark;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: normal;
+  @include font-sizes(24px, 37px);
+  font-weight: 400;
 }
 
 .strategies__link {
-  font-size: 16px;
-  line-height: 16px;
+  @include font-sizes(16px, 16px);
 }
 
 .strategies__description {
-  font-family: Arial;
+  font-family: $secondary-font-family;
 }

@@ -36,61 +36,74 @@
 
       <div class="container">
         <h1 class="page-main__title title">Подбор программы</h1>
-        <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="program-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <fieldset class="program-form__general general">
+        <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
+      <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="program-form__general">
+          <div class="container">
             <legend class="visually-hidden">Общая информация</legend>
-            <label>Имя:*<input class="general__field" type="text" name="name" placeholder="Барсик"></label>
-            <label>Вес (кг):*<input class="general__field" type="text" name="weight" placeholder="7"></label>
-            <label>Возраст (лет):<input class="general__field" type="text" name="age" placeholder="7"></label>
-          </fieldset>
-          <fieldset class="program-form__goal goal">
+            <label>Имя:*<input class="program-form__field" type="text" name="name" placeholder="Барсик"></label>
+            <label>Вес (кг):*<input class="program-form__field" type="text" name="weight" placeholder="7"></label>
+            <label>Возраст (лет):<input class="program-form__field" type="text" name="age" placeholder="7"></label>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__goal">
+          <div class="container">
             <legend class="visually-hidden">Выберите цель</legend>
             <div>
               <input class="visually-hidden" type="radio" name="program-goal" id="loosing" value="Похудение" checked>
-              <label class="goal__option" for="loosing">Похудение</label>
+              <label class="program-form__goal-option" for="loosing">Похудение</label>
             </div>
             <div>
               <input class="visually-hidden" type="radio" name="program-goal" id="gaining" value="Набор массы">
-              <label class="goal__option" for="gaining">Набор массы</label>
+              <label class="program-form__goal-option" for="gaining">Набор массы</label>
             </div>
             <div>
               <input class="visually-hidden" type="radio" name="program-goal" id="noidea" value="Не знаю">
-              <label class="goal__option" for="noidea">Не знаю (Нужен ваш совет)</label>
+              <label class="program-form__goal-option" for="noidea">Не знаю (Нужен ваш совет)</label>
             </div>
-          </fieldset>
-          <fieldset class="program-form__owner owner">
-            <legend class="owner__title">Контактные данные (владельца кота)</legend>
-            <label>E-mail:*<input class="owner__field" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
-            <label>Телефон:*<input class="owner__field" type="tel" name="tel" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90"></label>
-          </fieldset>
-          <fieldset class="program-form__comments comments">
-            <legend class="comments__title">Комментарий</legend>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__owner">
+          <div class="container">
+            <legend class="program-form__title">Контактные данные (владельца кота)</legend>
+            <label>E-mail:*<input class="program-form__field" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
+            <label>Телефон:*<input class="program-form__field" type="tel" name="tel" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90"></label>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__comments">
+          <div class="container">
+            <legend class="program-form__title">Комментарий</legend>
             <label class="visually-hidden" for="comment-field">Расскажите обо всех повадках кота</label>
-            <textarea class="comments__field" name="comments" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="program-form__additional additional">
-            <legend class="additional__title">Дополнительно</legend>
+            <textarea class="program-form__textarea" name="comments" id="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__additional">
+          <div class="container">
+            <legend class="program-form__title">Дополнительно</legend>
             <div>
               <input class="visually-hidden" type="checkbox" name="sugar-substitute" id="no-sugar" checked>
-              <label class="additional__option" for="no-sugar">Cахарозаменитель</label>
+              <label class="program-form__add-option" for="no-sugar">Cахарозаменитель</label>
             </div>
             <div>
               <input class="visually-hidden" type="checkbox" name="pure-water" id="pure-water">
-              <label class="additional__option" for="pure-water">Питьевая вода</label>
+              <label class="program-form__add-option" for="pure-water">Питьевая вода</label>
             </div>
             <div>
               <input class="visually-hidden" type="checkbox" name="milk" id="milk">
-              <label class="additional__option" for="milk">Молоко</label>
+              <label class="program-form__add-option" for="milk">Молоко</label>
             </div>
             <div>
               <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-              <label class="additional__option" for="vitamins">Витамины</label>
+              <label class="program-form__add-option" for="vitamins">Витамины</label>
             </div>
-          </fieldset>
+          </div>
+        </fieldset>
+        <div class="container">
           <button class="program-form__send button" type="submit">Отправить заявку</button>
           <small class="program-form__footnote">* — Обязательные поля</small>
-        </form>
+        </div>
+      </form>
       </div>
     </main>
 
@@ -102,7 +115,6 @@
           <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Наше расположение на карте">
       </section>
 
       <div class="side-links">
