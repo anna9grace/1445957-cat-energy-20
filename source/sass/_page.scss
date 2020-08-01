@@ -1,6 +1,5 @@
 body {
   min-width: 320px;
-  min-height: 100%;
   padding: 0;
   margin: 0;
   font-family: $main-font-family, $secondary-font-family, sans-serif;
@@ -37,23 +36,29 @@ img {
   overflow: hidden;
 }
 
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+}
+
 .container {
   max-width: 320px - (20px * 2);
   margin: 0 auto;
 }
 
-.page {
-  height: 100%;
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 768px - (30px * 2);
+  }
 }
 
-.page__body > * {
-  outline: 2px solid red;
-}
-
-.page__body > * > * {
-  outline: 1px solid greenyellow;
-}
-
-.page__body > * > * > * {
-  outline: 1px solid violet;
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1440px - (110px * 2);
+  }
 }
