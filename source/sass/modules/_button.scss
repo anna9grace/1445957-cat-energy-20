@@ -1,0 +1,16 @@
+.button {
+  @include font-sizes(16px, 20px);
+  font-family: $main-font-family;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: $basic-theme-color;
+  color: $font-color-light;
+  width: 100%;
+  display: inline-block;
+
+  &--light {
+    background-color: $basic-bg-color;
+    color: $main-font-color;
+  }
+}

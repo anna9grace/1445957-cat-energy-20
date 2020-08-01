@@ -1,0 +1,11 @@
+.features {
+  margin-bottom: 42px;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__text {
+  font-family: $secondary-font-family;
+}

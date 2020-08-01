@@ -1,0 +1,29 @@
+.strategies {
+  margin-bottom: 27px;
+}
+
+.strategies__list {
+  @include list-reset;
+}
+
+.strategies__item {
+  background-color: $basic-bg-color;
+  padding: 18px 19px;
+}
+
+.strategies__title,
+.strategies__link {
+  text-transform: uppercase;
+  color: $font-color-dark;
+
+  @include font-sizes(24px, 37px);
+  font-weight: 400;
+}
+
+.strategies__link {
+  @include font-sizes(16px, 16px);
+}
+
+.strategies__description {
+  font-family: $secondary-font-family;
+}

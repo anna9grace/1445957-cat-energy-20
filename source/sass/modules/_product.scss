@@ -1,0 +1,10 @@
+.product {
+  border-top: 1px solid #ebebeb;
+  padding: 19px 0 25px 0;
+}
+
+.product__name {
+  @include font-sizes(16px, 20px);
+  color: $font-color-medium;
+  text-transform: uppercase;
+}

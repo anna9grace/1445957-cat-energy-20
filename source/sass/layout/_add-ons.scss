@@ -1,0 +1,12 @@
+.add-ons__list {
+  @include list-reset;
+  margin-top: 35px;
+}
+
+.add-ons__title {
+  font-weight: 400;
+  color: $font-color-dark;
+  margin: 0;
+
+  @include font-sizes(24px, 24px);
+}

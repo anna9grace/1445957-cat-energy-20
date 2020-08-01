@@ -1,0 +1,15 @@
+.example {
+  background-color: #eaeaea;
+  padding: 25px 0;
+}
+
+.example__text {
+  font-family: $secondary-font-family;
+}
+
+.example__costs {
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $font-color-dark;
+}

@@ -1,0 +1,59 @@
+body {
+  min-width: 320px;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font-family, $secondary-font-family, sans-serif;
+
+  @include font-sizes();
+  font-weight: 400;
+  color: $main-font-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 320px - (20px * 2);
+  margin: 0 auto;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body > * {
+  outline: 2px solid red;
+}
+
+.page__body > * > * {
+  outline: 1px solid greenyellow;
+}
+
+.page__body > * > * > * {
+  outline: 1px solid violet;
+}

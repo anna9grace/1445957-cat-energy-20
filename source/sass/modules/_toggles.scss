@@ -1,0 +1,6 @@
+.toggles {
+  @include font-sizes(16px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color-dark;
+}
