@@ -6,3 +6,9 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    @include font-sizes(60px, 60px);
+  }
+}
