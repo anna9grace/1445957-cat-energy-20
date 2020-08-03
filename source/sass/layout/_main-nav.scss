@@ -38,8 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
+    @include font-sizes (20px, 30px);
     width: 478px;
-
-    @include font-sizes (20px, 30px)
   }
 }

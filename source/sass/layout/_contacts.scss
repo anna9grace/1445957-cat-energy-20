@@ -2,6 +2,7 @@
   font-family: $secondary-font-family;
   line-height: 20px;
   position: relative;
+  background-color: $basic-bg-color;
 }
 
 .contacts__wrapper {
@@ -9,7 +10,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 28px 0;
-  background-color: $font-color-light;
 }
 
 .contacts__invitation {
@@ -45,13 +45,13 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .contacts__wrapper {
     width: 570px;
     position: absolute;
     padding-left: 76px;
     padding-right: 89px;
     transform: translateY(200px) translateY(-50%);
+    background-color: $font-color-light;
   }
 
   .contacts__adress {

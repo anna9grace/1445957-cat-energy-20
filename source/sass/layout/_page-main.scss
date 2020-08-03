@@ -1,8 +1,26 @@
+.page-main {
+  border-top: 1px solid #d9d9d9;
+}
+
 .page-main__text {
   text-transform: uppercase;
   color: $font-color-dark;
+  margin: 37px 0 39px 0;
 }
 
 .page-main__programm {
   padding-top: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__text {
+    @include font-sizes(20px, 30px);
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__text {
+    padding-left: 0;
+  }
 }

@@ -10,6 +10,7 @@
 
   &::before {
     content: "";
+
     @include sizes(60px, 60px);
     background-color: $basic-theme-color; /*заменить на картинку*/
   }

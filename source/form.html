@@ -39,75 +39,91 @@
         <h1 class="page-main__title title">Подбор программы</h1>
         <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
-      <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="program-form__general fieldset">
-          <div class="container">
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+
+        <fieldset class="form__general form__fieldset fieldset">
+          <div class="form__general-container fieldset__container">
             <h3 class="visually-hidden">Общая информация</h3>
-            <label>Имя:*<input class="program-form__field fieldset__text" type="text" name="name" placeholder="Барсик"></label>
-            <label>Вес (кг):*<input class="program-form__field fieldset__text" type="text" name="weight" placeholder="7"></label>
-            <label>Возраст (лет):<input class="program-form__field fieldset__text" type="text" name="age" placeholder="7"></label>
+            <p class="fieldset__text-wrapper">
+              <label class="" for="namefield">Имя:*</label>
+              <input class="fieldset__text" type="text" name="name" id="namefield" placeholder="Барсик">
+            </p>
+            <p class="fieldset__text-wrapper">
+              <label for="weightfield">Вес (кг):*</label>
+              <input class="fieldset__text" type="text" name="weight" id="weightfield" placeholder="7">
+            </p>
+            <p class="fieldset__text-wrapper">
+              <label for="agefield">Возраст (лет):</label>
+              <input class="fieldset__text" type="text" name="age" id="agefield" placeholder="7">
+            </p>
           </div>
         </fieldset>
-        <fieldset class="program-form__goal fieldset">
-          <div class="container">
+
+        <fieldset class="form__goal form__fieldset fieldset">
+          <div class="form__goal-container fieldset__container">
             <h3 class="visually-hidden">Выберите цель</h3>
-            <div>
-              <input class="visually-hidden" type="radio" name="program-goal" id="loosing" value="Похудение" checked>
-              <label class="program-form__goal-option" for="loosing">Похудение</label>
+            <div class="fieldset__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="goal" id="loosing" value="Похудение" checked>
+              <label class="fieldset__option" for="loosing">Похудение</label>
             </div>
-            <div>
-              <input class="visually-hidden" type="radio" name="program-goal" id="gaining" value="Набор массы">
-              <label class="program-form__goal-option" for="gaining">Набор массы</label>
+            <div class="fieldset__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="goal" id="gaining" value="Набор массы">
+              <label class="fieldset__option" for="gaining">Набор массы</label>
             </div>
-            <div>
-              <input class="visually-hidden" type="radio" name="program-goal" id="noidea" value="Не знаю">
-              <label class="program-form__goal-option" for="noidea">Не знаю (Нужен ваш совет)</label>
+            <div class="fieldset__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="goal" id="noidea" value="Не знаю">
+              <label class="fieldset__option" for="noidea">Не знаю (Нужен ваш совет)</label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="program-form__owner">
-          <div class="container">
-            <h3 class="program-form__title fieldset">Контактные данные (владельца кота)</h3>
-            <label>E-mail:*<input class="program-form__field fieldset__text" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
-            <label>Телефон:*<input class="program-form__field fieldset__text" type="tel" name="tel" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90"></label>
+
+        <fieldset class="form__owner form__fieldset fieldset">
+          <div class="form__owner-container fieldset__container">
+            <h3 class="form__owner-title fieldset__title">Контактные данные (владельца кота)</h3>
+            <p class="fieldset__text-wrapper">
+              <label for="emailfield">E-mail:*</label>
+              <input class="fieldset__text" type="email" name="email" id="emailfield" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="fieldset__text-wrapper">
+              <label for="telfield">Телефон:*</label>
+              <input class="fieldset__text" type="tel" name="tel" id="telfield" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90">
+            </p>
           </div>
         </fieldset>
-        <fieldset class="program-form__comments fieldset">
-          <div class="container">
-            <h3 class="program-form__title">Комментарий</h3>
+
+        <fieldset class="form__comments form__fieldset fieldset">
+          <div class="form__comments-container fieldset__container">
+            <h3 class="fieldset__title">Комментарий</h3>
             <label class="visually-hidden" for="comment-field">Расскажите обо всех повадках кота</label>
-            <textarea class="program-form__textarea fieldset__text" name="comments" id="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__textarea fieldset__text" name="comments" id="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="program-form__additional">
-          <div class="container">
-            <h3 class="program-form__title">Дополнительно</h3>
-            <div>
+
+        <fieldset class="form__additional form__fieldset fieldset">
+          <div class="form__additional-container fieldset__container">
+            <h3 class="fieldset__title">Дополнительно</h3>
+            <div class="fieldset__radio-wrapper">
               <input class="visually-hidden" type="checkbox" name="sugar-substitute" id="no-sugar" checked>
-              <label class="program-form__add-option" for="no-sugar">Cахарозаменитель</label>
-            </div>
-            <div>
+              <label class="fieldset__check-option" for="no-sugar">Cахарозаменитель</label>
               <input class="visually-hidden" type="checkbox" name="pure-water" id="pure-water">
-              <label class="program-form__add-option" for="pure-water">Питьевая вода</label>
-            </div>
-            <div>
+              <label class="fieldset__check-option" for="pure-water">Питьевая вода</label>
               <input class="visually-hidden" type="checkbox" name="milk" id="milk">
-              <label class="program-form__add-option" for="milk">Молоко</label>
-            </div>
-            <div>
+              <label class="fieldset__check-option" for="milk">Молоко</label>
               <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-              <label class="program-form__add-option" for="vitamins">Витамины</label>
+              <label class="fieldset__check-option" for="vitamins">Витамины</label>
             </div>
           </div>
         </fieldset>
-        <div class="container">
-          <button class="program-form__send button" type="submit">Отправить заявку</button>
-          <small class="program-form__footnote">* — Обязательные поля</small>
+
+        <div class="form__send container">
+          <button class="form__submit button" type="submit">Отправить заявку</button>
+          <small class="form__footnote">* — Обязательные поля</small>
         </div>
       </form>
     </main>
 
-    <footer>
+    <footer class="main-footer">
 
       <section class="contacts container">
         <h2 class="visually-hidden">Наши контакты</h2>

@@ -2,11 +2,10 @@
   min-height: 65px;
   max-width: 280px;
   padding: 12px 0;
-  margin: auto
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
-
   .page-header {
     display: flex;
     justify-content: space-between;
