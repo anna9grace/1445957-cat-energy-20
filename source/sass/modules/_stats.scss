@@ -3,6 +3,9 @@
 
   @include font-sizes(12px, 12px);
   text-align: center;
+  width: 124px;
+  border: 1px solid $basic-border-color;
+  border-radius: 3px;
 }
 
 .stats__data {
@@ -11,4 +14,22 @@
   @include font-sizes(24px, 24px);
   color: $font-color-dark;
   text-transform: uppercase;
+}
+
+.stats__description {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    width: 162px;
+  }
+
+  .stats__data {
+    @include font-sizes(30px, 37px);
+  }
+
+  .stats__description {
+    @include font-sizes(14px, 14px);
+  }
 }

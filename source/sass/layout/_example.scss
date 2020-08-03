@@ -5,11 +5,68 @@
 
 .example__text {
   font-family: $secondary-font-family;
+  margin: 33px 0 25px 0;
 }
 
 .example__costs {
+  flex-basis: 280px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: $font-color-dark;
+}
+
+.example__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.example__stats-item {
+  &:not(:last-of-type) {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__costs {
+    font-size: 20px;
+    flex-basis: 175px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .example__text {
+    @include font-sizes(16px, 24px);
+    margin: 63px 0 54px 0;
+  }
+
+  .example__stats-item {
+    &:not(:last-of-type) {
+      margin-right: 42px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 445px 1fr;
+    column-gap: 120px;
+  }
+
+  .example__picture {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    align-self: stretch;
+  }
+
+  .example__costs {
+    margin: 0;
+    flex-basis: auto;
+  }
+
+  .example__stats {
+    justify-content: flex-start;
+  }
 }

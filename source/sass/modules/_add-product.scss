@@ -2,10 +2,10 @@
   font-family: $secondary-font-family;
   line-height: 20px;
   padding: 13px 0 19px 0;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $basic-border-color;
 
   &:last-of-type {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $basic-border-color;
   }
 }
 
@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     padding-left: 38px;
     padding-right: 38px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $basic-border-color;
   }
 
   .add-product__name {
