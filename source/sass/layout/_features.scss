@@ -1,11 +1,57 @@
-.features {
+.features__list {
+  @include list-reset;
+  margin-top: 35px;
   margin-bottom: 42px;
 }
 
-.features__list {
-  @include list-reset;
+.features__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+
+    @include sizes(60px, 60px);
+    background-color: $basic-theme-color; /*заменить на картинку*/
+  }
 }
 
 .features__text {
   font-family: $secondary-font-family;
+  flex-basis: 200px;
+  margin: 10px 0 10px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 135px;
+    row-gap: 77px;
+    margin-top: 70px;
+  }
+
+  .features__item {
+    flex-direction: column;
+    width: 250px;
+    align-items: flex-start;
+
+    &::before {
+      @include sizes(80px, 80px);
+    }
+  }
+
+  .features__text {
+    @include font-sizes(16px, 24px);
+    flex-basis: 130px;
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    grid-template-columns: repeat(4, min-content);
+    column-gap: 77px;
+    margin-bottom: 205px;
+  }
 }

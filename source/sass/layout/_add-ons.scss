@@ -1,6 +1,7 @@
 .add-ons__list {
   @include list-reset;
   margin-top: 35px;
+  margin-bottom: 39px;
 }
 
 .add-ons__title {
@@ -9,4 +10,29 @@
   margin: 0;
 
   @include font-sizes(24px, 24px);
+}
+
+@media (min-width: $tablet-width) {
+  .add-ons__title {
+    @include font-sizes(36px, 36px);
+    padding-left: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-ons__container {
+    display: grid;
+    grid-template-columns: 896px 1fr;
+    row-gap: 80px;
+    column-gap: 79px;
+    margin-bottom: 86px;
+  }
+
+  .add-ons__title {
+    grid-column: 1 / -1;
+  }
+
+  .add-ons__list {
+    margin: 0;
+  }
 }

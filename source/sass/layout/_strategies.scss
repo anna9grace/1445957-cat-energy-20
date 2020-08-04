@@ -9,6 +9,10 @@
 .strategies__item {
   background-color: $basic-bg-color;
   padding: 18px 19px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 .strategies__title,
@@ -20,10 +24,54 @@
   font-weight: 400;
 }
 
-.strategies__link {
-  @include font-sizes(16px, 16px);
+.strategies__title {
+  margin: 0;
 }
 
 .strategies__description {
   font-family: $secondary-font-family;
+}
+
+.strategies__link {
+  @include font-sizes(16px, 16px);
+}
+
+
+@media (min-width: $tablet-width) {
+  .strategies__item {
+    padding: 77px 280px 57px 52px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .strategies__title {
+    @include font-sizes(36px, 36px);
+  }
+
+  .strategies__description {
+    @include font-sizes(16px, 24px);
+  }
+
+  .strategies__link {
+    @include font-sizes(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .strategies__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .strategies__item {
+    flex-basis: 570px;
+    padding-right: 52px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
 }

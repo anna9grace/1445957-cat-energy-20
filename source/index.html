@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -20,13 +21,13 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a class="link">Главная</a>
+            <a class="main-nav__link link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +37,7 @@
 
       <h1 class="visually-hidden">Магазин питания для котов Cat Energy</h1>
       <section class="promo">
-        <div class="promo_wrapper">
+        <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
         </div>
@@ -89,16 +90,16 @@
           <h2 class="example__title title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <dl class="example__stats">
-            <div class="stats">
+            <div class="example__stats-item stats">
               <dt class="stats__data">5 кг</dt>
               <dd class="stats__description">снижение веса</dd>
             </div>
-            <div class="stats">
+            <div class="example__stats-item stats">
               <dt class="stats__data">60 дней</dt>
               <dd class="stats__description">затрачено времени</dd>
             </div>
+            <p class="example__costs">Затраты на питание: 15 000 руб.</p>
           </dl>
-          <p class="example__costs">Затраты на питание: 15 000 руб.</p>
           <div class="example__picture slider">
             <ul class="slider__list">
               <li class="slider__item slider__item--before">
@@ -122,16 +123,17 @@
 
     <footer class="page-footer">
 
-      <section class="contacts">
+      <section class="contacts container">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__wrapper container">
+        <div class="contacts__wrapper">
           <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="contacts__map">
-          <!-- интерактивная карта -->
-        </div>
       </section>
+      <div class="map">
+          <!-- интерактивная карта -->
+      </div>
+
 
       <div class="side-links">
         <div class="side-links__wrapper container">

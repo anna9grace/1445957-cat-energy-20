@@ -8,3 +8,9 @@
   color: $font-color-light;
   padding: 43px 55px;
 }
+
+@media (min-width: $tablet-width) {
+  .action {
+    min-height: 200px;
+  }
+}
