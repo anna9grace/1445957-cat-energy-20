@@ -1,16 +1,18 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 0;
+  padding-top: 29px;
+  padding-bottom: 16px;
 }
 
 .example__text {
   font-family: $secondary-font-family;
-  margin: 33px 0 25px 0;
+  margin: 36px 0 25px 0;
 }
 
 .example__costs {
   flex-basis: 280px;
-  line-height: 20px;
+  line-height: 27px;
+  margin-top: 30px;
   text-transform: uppercase;
   text-align: center;
   color: $font-color-dark;
@@ -20,6 +22,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .example__stats-item {
@@ -28,11 +32,27 @@
   }
 }
 
+.example__picture {
+  width: 320px;
+  margin: 16px auto 20px auto;
+
+  img {
+    object-fit: contain;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .example {
+    padding-top: 43px;
+    padding-bottom: 46px;
+    background-image: linear-gradient(to bottom, $font-color-light 57%, #eaeaea 57%);
+  }
+
   .example__costs {
     font-size: 20px;
     flex-basis: 175px;
     text-align: right;
+    margin: 0;
     margin-left: auto;
   }
 
@@ -46,24 +66,52 @@
       margin-right: 42px;
     }
   }
+
+  .example__picture {
+    width: 768px;
+    margin-top: 90px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    padding: 21px 110px 67px 110px;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: auto;
+    margin-top: -50px;
+    background-image: linear-gradient(to bottom, #ffffff 32%, #eaeaea 32%);
+  }
+
   .example__wrapper {
-    display: grid;
-    grid-template-columns: 445px 1fr;
-    column-gap: 120px;
+    margin: 0;
+    flex-basis: 438px;
+    margin-top: 50px;
+  }
+
+  .example__text {
+    margin: 149px 0 68px 0;
   }
 
   .example__picture {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
     align-self: stretch;
+    flex-basis: 675px;
+    margin: 0;
+
+    img {
+      margin-right: -79px;
+    }
   }
 
   .example__costs {
-    margin: 0;
+    margin-left: 0;
+    margin-top: 58px;
     flex-basis: auto;
+
+    span {
+      margin-left: 59px;
+    }
   }
 
   .example__stats {

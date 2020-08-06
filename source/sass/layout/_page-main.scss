@@ -1,5 +1,5 @@
 .page-main {
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $secondary-border-color;
 }
 
 .page-main__text {
@@ -13,6 +13,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main {
+    border: none;
+  }
+
   .page-main__text {
     @include font-sizes(20px, 30px);
     padding-left: 40px;

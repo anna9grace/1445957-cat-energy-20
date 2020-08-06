@@ -1,5 +1,6 @@
 .button {
   @include font-sizes(16px, 20px);
+  display: inline-block;
   font-family: $main-font-family;
   text-align: center;
   vertical-align: middle;
@@ -7,7 +8,7 @@
   background-color: $basic-theme-color;
   color: $font-color-light;
   width: 100%;
-  display: inline-block;
+  padding: 10px 20px;
 
   &--light {
     background-color: $basic-bg-color;

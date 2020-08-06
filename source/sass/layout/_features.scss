@@ -1,18 +1,21 @@
 .features__list {
   @include list-reset;
-  margin-top: 35px;
-  margin-bottom: 42px;
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  gap: 6px;
 }
 
 .features__item {
+  position: relative;
   display: flex;
   align-items: center;
 
   &::before {
-    content: "";
-
     @include sizes(60px, 60px);
-    background-color: $basic-theme-color; /*заменить на картинку*/
+    content: "";
+    background-color: $basic-theme-color;
   }
 }
 
@@ -24,11 +27,14 @@
 
 @media (min-width: $tablet-width) {
   .features__list {
-    display: grid;
     grid-template-columns: repeat(2, min-content);
     column-gap: 135px;
     row-gap: 77px;
-    margin-top: 70px;
+    margin-top: 74px;
+    margin-bottom: 0;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #e6e6e6;
+    counter-reset: number;
   }
 
   .features__item {
@@ -38,6 +44,17 @@
 
     &::before {
       @include sizes(80px, 80px);
+    }
+
+    &::after {
+      @include font-sizes(280px, 280px);
+      position: absolute;
+      counter-increment: number;
+      content: counter(number);
+      color: $basic-bg-color;
+      z-index: -1;
+      top: -41px;
+      right: 5px;
     }
   }
 
@@ -51,7 +68,7 @@
 @media (min-width: $desktop-width) {
   .features__list {
     grid-template-columns: repeat(4, min-content);
-    column-gap: 77px;
-    margin-bottom: 205px;
+    column-gap: 75px;
+    border: none;
   }
 }

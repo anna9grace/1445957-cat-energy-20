@@ -9,3 +9,24 @@
 .slider__item--after {
   display: none;
 }
+
+.slider__toggles {
+  margin-top: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles {
+    margin-top: 14px;
+  }
+
+  .slider__item {
+    @include sizes(690px, 517px);
+    margin: auto;
+
+    // изменить на соответствующую картинку, пока для наглядных размеров
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

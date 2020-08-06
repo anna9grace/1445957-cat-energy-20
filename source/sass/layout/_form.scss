@@ -13,7 +13,7 @@
 
 .form__goal {
   color: $font-color-medium;
-  border: 1px solid #d9d9d9;
+  border: 1px solid $secondary-border-color;
   border-right: none;
   border-left: none;
   padding: 20px 0;
@@ -49,7 +49,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 27px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid $secondary-border-color;
   }
 
   .form__send {

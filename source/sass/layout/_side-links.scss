@@ -5,8 +5,8 @@
 
 .side-links__socials {
   @include list-reset;
-  padding: 20px 0;
-  border-top: 1px solid #d9d9d9;
+  padding: 19px 0;
+  border-top: 1px solid $secondary-border-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,5 +15,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .side-links__socials {
+    border: none;
+    margin-left: 49px;
+    margin-right: 20px;
   }
 }

@@ -3,6 +3,10 @@
   line-height: 20px;
   position: relative;
   background-color: $basic-bg-color;
+
+  &--main-page {
+    background: none;
+  }
 }
 
 .contacts__wrapper {
@@ -13,10 +17,9 @@
 }
 
 .contacts__invitation {
-  flex-basis: 50%;
+  @include font-sizes(16px, 20px);
+  flex-basis: 142px;
   font-family: $main-font-family;
-
-  @include font-sizes(16px, 18px);
   text-transform: uppercase;
   color: $additional-dark;
   margin: 0;
@@ -29,18 +32,23 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding: 64px 41px 58px 41px;
   }
 
   .contacts__invitation {
-    @include font-sizes(20px, 21px);
+    @include font-sizes(20px, 24px);
   }
 
   .contacts__adress {
-    margin-left: 280px;
+    margin-left: auto;
     text-align: right;
+    flex-basis: 173px;
     font-size: 16px;
+
+    span {
+      display: inline-block;
+      padding-top: 20px;
+    }
   }
 }
 
@@ -50,7 +58,7 @@
     position: absolute;
     padding-left: 76px;
     padding-right: 89px;
-    transform: translateY(200px) translateY(-50%);
+    transform: translateY(195px) translateY(-50%);
     background-color: $font-color-light;
   }
 
