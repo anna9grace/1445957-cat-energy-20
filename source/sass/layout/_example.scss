@@ -68,7 +68,7 @@
   }
 
   .example__picture {
-    width: 768px;
+    width: 708px;
     margin-top: 90px;
   }
 }
@@ -76,37 +76,38 @@
 @media (min-width: $desktop-width) {
   .example {
     padding: 21px 110px 67px 110px;
-    display: flex;
-    justify-content: space-between;
-    width: 1440px;
-    margin: auto;
     margin-top: -50px;
     background-image: linear-gradient(to bottom, #ffffff 32%, #eaeaea 32%);
   }
 
   .example__wrapper {
-    margin: 0;
-    flex-basis: 438px;
+    display: grid;
+    grid-template-columns: 438px min-content;
+    column-gap: 74px;
+  }
+
+  .example__title {
     margin-top: 50px;
   }
 
   .example__text {
-    margin: 149px 0 68px 0;
+    margin: 143px 0 65px 0;
   }
 
   .example__picture {
     align-self: stretch;
-    flex-basis: 675px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
     margin: 0;
 
     img {
-      margin-right: -79px;
+      margin-right: -94px;
     }
   }
 
   .example__costs {
     margin-left: 0;
-    margin-top: 58px;
+    margin-top: 59px;
     flex-basis: auto;
 
     span {

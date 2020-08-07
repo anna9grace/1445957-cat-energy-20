@@ -12,13 +12,12 @@
 .add-product__pack {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 9px 0 11px 0;
 }
 
 .add-product__name {
-  font-family: $main-font-family;
-
   @include font-sizes(16px, 16px);
+  font-family: $main-font-family;
   font-weight: 400;
   text-transform: uppercase;
   color: $font-color-medium;
@@ -31,8 +30,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 26px 37px 27px 37px;
     border: 1px solid $basic-border-color;
   }
 
@@ -45,16 +43,22 @@
     @include font-sizes(16px, 20px);
     flex-basis: 314px;
     justify-content: flex-end;
+    margin: 0;
   }
 
   .add-product__price {
-    margin-left: 51px;
+    flex-basis: 93px;
+    text-align: right;
+  }
+
+  .add-product__order {
+    margin-top: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .add-product {
-    padding: 15px 0 17px 0;
+    padding: 16px 0 14px 0;
     border-right: none;
     border-left: none;
   }
@@ -63,11 +67,19 @@
     flex-basis: 285px;
   }
 
+  .add-product__price {
+    flex-basis: 44px;
+    text-align: left;
+  }
+
   .add-product__order {
     flex-basis: 244px;
+    margin: 0;
   }
 
   .add-product__pack {
     flex-basis: 287px;
+    text-align: left;
+    justify-content: space-between;
   }
 }

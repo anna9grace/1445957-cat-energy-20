@@ -9,8 +9,57 @@
   padding: 43px 55px;
 }
 
+.action__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  &::before {
+    @include sizes(59px, 78px);
+    content: "";
+    background: url("../../img/icon-gift.svg") no-repeat;
+    margin-bottom: 45px;
+    margin-top: 18px;
+    align-self: center;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .action {
     min-height: 200px;
+    padding: 62px 122px 61px  88px;
+  }
+
+  .action__text {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      width: 163px;
+      text-align: left;
+    }
+
+    &::before {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .action {
+    padding: 62px 41px 30px 41px;
+  }
+
+  .action__text {
+    flex-direction: column;
+
+    span {
+      text-align: center;
+    }
+
+    &::before {
+      margin-bottom: 45px;
+    }
   }
 }

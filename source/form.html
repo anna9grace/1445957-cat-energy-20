@@ -79,8 +79,10 @@
         </fieldset>
 
         <fieldset class="form__owner form__fieldset fieldset">
+          <h3 class="form__owner-title fieldset__title title-line">
+            <span class="title-line__text">Контактные данные (владельца кота)</span>
+          </h3>
           <div class="form__owner-container fieldset__container">
-            <h3 class="form__owner-title fieldset__title">Контактные данные (владельца кота)</h3>
             <p class="fieldset__text-wrapper">
               <label for="emailfield">E-mail:*</label>
               <input class="fieldset__text" type="email" name="email" id="emailfield" placeholder="kuklachev@gmail.com">
@@ -93,16 +95,20 @@
         </fieldset>
 
         <fieldset class="form__comments form__fieldset fieldset">
+          <h3 class="fieldset__title title-line">
+            <span class="title-line__text">Комментарий</span>
+          </h3>
           <div class="form__comments-container fieldset__container">
-            <h3 class="fieldset__title">Комментарий</h3>
             <label class="visually-hidden" for="comment-field">Расскажите обо всех повадках кота</label>
             <textarea class="form__textarea fieldset__text" name="comments" id="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
         <fieldset class="form__additional form__fieldset fieldset">
+          <h3 class="fieldset__title title-line">
+            <span class="title-line__text">Дополнительно</span>
+          </h3>
           <div class="form__additional-container fieldset__container">
-            <h3 class="fieldset__title">Дополнительно</h3>
             <div class="fieldset__radio-wrapper">
               <input class="visually-hidden" type="checkbox" name="sugar-substitute" id="no-sugar" checked>
               <label class="fieldset__check-option" for="no-sugar">Cахарозаменитель</label>
