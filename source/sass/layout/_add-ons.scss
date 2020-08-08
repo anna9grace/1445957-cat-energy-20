@@ -1,14 +1,10 @@
 .add-ons {
   margin-bottom: 34px;
-
-  &::after {
-    top: 15px;
-  }
 }
 
 .add-ons__list {
   @include list-reset;
-  margin-top: 35px;
+  margin-top: 34px;
   margin-bottom: 39px;
 }
 
@@ -21,10 +17,6 @@
 @media (min-width: $tablet-width) {
   .add-ons {
     margin-bottom: 74px;
-
-    &::after {
-      top: 23px;
-    }
   }
 
   .add-ons__list {

@@ -50,6 +50,10 @@
     margin-top: 52px;
   }
 
+  .main-nav--main-page {
+    color: $font-color-light;
+  }
+
   .main-nav__list {
     @include font-sizes (20px, 30px);
     width: 478px;

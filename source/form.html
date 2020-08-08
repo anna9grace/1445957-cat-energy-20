@@ -46,7 +46,7 @@
           <div class="form__general-container fieldset__container">
             <h3 class="visually-hidden">Общая информация</h3>
             <p class="fieldset__text-wrapper">
-              <label class="" for="namefield">Имя:*</label>
+              <label for="namefield">Имя:*</label>
               <input class="fieldset__text" type="text" name="name" id="namefield" placeholder="Барсик">
             </p>
             <p class="fieldset__text-wrapper">
@@ -63,62 +63,54 @@
         <fieldset class="form__goal form__fieldset fieldset">
           <div class="form__goal-container fieldset__container">
             <h3 class="visually-hidden">Выберите цель</h3>
-            <div class="fieldset__radio-wrapper">
-              <input class="visually-hidden" type="radio" name="goal" id="loosing" value="Похудение" checked>
-              <label class="fieldset__option" for="loosing">Похудение</label>
-            </div>
-            <div class="fieldset__radio-wrapper">
-              <input class="visually-hidden" type="radio" name="goal" id="gaining" value="Набор массы">
-              <label class="fieldset__option" for="gaining">Набор массы</label>
-            </div>
-            <div class="fieldset__radio-wrapper">
-              <input class="visually-hidden" type="radio" name="goal" id="noidea" value="Не знаю">
-              <label class="fieldset__option" for="noidea">Не знаю (Нужен ваш совет)</label>
-            </div>
+            <input class="visually-hidden fieldset__radio-input" type="radio" name="goal" id="loosing" value="Похудение" checked>
+            <label class="fieldset__option" for="loosing">Похудение</label>
+            <input class="visually-hidden fieldset__radio-input" type="radio" name="goal" id="gaining" value="Набор массы">
+            <label class="fieldset__option" for="gaining">Набор массы</label>
+            <input class="visually-hidden fieldset__radio-input" type="radio" name="goal" id="noidea" value="Не знаю">
+            <label class="fieldset__option" for="noidea">Не знаю (Нужен ваш совет)</label>
           </div>
         </fieldset>
 
-        <fieldset class="form__owner form__fieldset fieldset">
-          <h3 class="form__owner-title fieldset__title title-line">
+        <fieldset class="form__owner form__fieldset fieldset title-line">
+          <h3 class="fieldset__title title-line__block">
             <span class="title-line__text">Контактные данные (владельца кота)</span>
           </h3>
           <div class="form__owner-container fieldset__container">
-            <p class="fieldset__text-wrapper">
+            <p class="form__owner-wrapper fieldset__text-wrapper">
               <label for="emailfield">E-mail:*</label>
-              <input class="fieldset__text" type="email" name="email" id="emailfield" placeholder="kuklachev@gmail.com">
+              <input class="fieldset__text fieldset__text--icon" type="email" name="email" id="emailfield" placeholder="kuklachev@gmail.com">
             </p>
-            <p class="fieldset__text-wrapper">
+            <p class="form__owner-wrapper fieldset__text-wrapper">
               <label for="telfield">Телефон:*</label>
-              <input class="fieldset__text" type="tel" name="tel" id="telfield" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90">
+              <input class="fieldset__text fieldset__text--icon" type="tel" name="tel" id="telfield" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90">
             </p>
           </div>
         </fieldset>
 
-        <fieldset class="form__comments form__fieldset fieldset">
-          <h3 class="fieldset__title title-line">
+        <fieldset class="form__comments form__fieldset fieldset title-line">
+          <h3 class="fieldset__title title-line__block">
             <span class="title-line__text">Комментарий</span>
           </h3>
           <div class="form__comments-container fieldset__container">
             <label class="visually-hidden" for="comment-field">Расскажите обо всех повадках кота</label>
-            <textarea class="form__textarea fieldset__text" name="comments" id="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__textarea fieldset__text" name="comments" id="comment-field" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
-        <fieldset class="form__additional form__fieldset fieldset">
-          <h3 class="fieldset__title title-line">
+        <fieldset class="form__additional form__fieldset fieldset title-line">
+          <h3 class="fieldset__title title-line__block">
             <span class="title-line__text">Дополнительно</span>
           </h3>
           <div class="form__additional-container fieldset__container">
-            <div class="fieldset__radio-wrapper">
-              <input class="visually-hidden" type="checkbox" name="sugar-substitute" id="no-sugar" checked>
-              <label class="fieldset__check-option" for="no-sugar">Cахарозаменитель</label>
-              <input class="visually-hidden" type="checkbox" name="pure-water" id="pure-water">
-              <label class="fieldset__check-option" for="pure-water">Питьевая вода</label>
-              <input class="visually-hidden" type="checkbox" name="milk" id="milk">
-              <label class="fieldset__check-option" for="milk">Молоко</label>
-              <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-              <label class="fieldset__check-option" for="vitamins">Витамины</label>
-            </div>
+            <input class="visually-hidden fieldset__check-input" type="checkbox" name="sugar-substitute" id="no-sugar" checked>
+            <label class="fieldset__check-option" for="no-sugar">Cахарозаменитель</label>
+            <input class="visually-hidden fieldset__check-input" type="checkbox" name="pure-water" id="pure-water">
+            <label class="fieldset__check-option" for="pure-water">Питьевая вода</label>
+            <input class="visually-hidden fieldset__check-input" type="checkbox" name="milk" id="milk">
+            <label class="fieldset__check-option" for="milk">Молоко</label>
+            <input class="visually-hidden fieldset__check-input" type="checkbox" name="vitamins" id="vitamins">
+            <label class="fieldset__check-option" for="vitamins">Витамины</label>
           </div>
         </fieldset>
 
@@ -129,9 +121,9 @@
       </form>
     </main>
 
-    <footer class="main-footer">
+    <footer class="page-footer">
 
-      <section class="contacts container">
+      <section class="contacts contacts--main-page container">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
@@ -144,7 +136,6 @@
       <div class="map">
           <!-- интерактивная карта -->
       </div>
-
 
       <div class="side-links">
         <div class="side-links__wrapper container">

@@ -5,7 +5,7 @@
 .page-main__text {
   text-transform: uppercase;
   color: $font-color-dark;
-  margin: 37px 0 39px 0;
+  margin: 37px 6px 39px 0;
 }
 
 .page-main__programm {
@@ -17,13 +17,24 @@
     border: none;
   }
 
+  .page-main__programm {
+    padding-top: 32px;
+  }
+
   .page-main__text {
     @include font-sizes(20px, 30px);
     padding-left: 40px;
+    margin-top: 55px;
+    margin-bottom: 64px;
+    max-width: 389px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__programm {
+    padding-top: 49px;
+  }
+
   .page-main__text {
     padding-left: 0;
   }

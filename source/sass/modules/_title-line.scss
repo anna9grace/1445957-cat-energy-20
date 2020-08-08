@@ -9,6 +9,7 @@
     border: 1px solid $basic-theme-color;
     left: 0;
     z-index: -1;
+    top: 15px;
   }
 }
 
@@ -28,9 +29,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .title-line {
+    &::after {
+      top: 23px;
+    }
+  }
+
   .title-line__block {
     max-width: 768px;
-    padding-left: 37px;
+    padding-left: 39px;
   }
 
   .title-line__text {
