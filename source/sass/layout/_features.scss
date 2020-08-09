@@ -2,9 +2,9 @@
   @include list-reset;
   display: grid;
   grid-template-columns: 100%;
+  gap: 6px;
   margin-top: 34px;
   margin-bottom: 34px;
-  gap: 6px;
 }
 
 .features__item {
@@ -20,9 +20,9 @@
 }
 
 .features__text {
-  font-family: $secondary-font-family;
   flex-basis: 200px;
   margin: 10px 0 10px 20px;
+  font-family: $secondary-font-family;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,12 +49,12 @@
     &::after {
       @include font-sizes(280px, 280px);
       position: absolute;
-      counter-increment: number;
-      content: counter(number);
-      color: $basic-bg-color;
-      z-index: -1;
       top: -41px;
       right: 5px;
+      color: $basic-bg-color;
+      counter-increment: number;
+      content: counter(number);
+      z-index: -1;
     }
   }
 

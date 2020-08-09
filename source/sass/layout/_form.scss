@@ -1,11 +1,11 @@
 .form {
-  text-transform: uppercase;
-  font-size: 16px;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
   justify-content: stretch;
   margin-bottom: 32px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: grid;
 }
 
 .form__fieldset,
@@ -21,11 +21,11 @@
 
 .form__goal {
   margin: 24px 0;
+  padding: 20px 0;
   color: $font-color-medium;
   border: 1px solid $secondary-border-color;
   border-right: none;
   border-left: none;
-  padding: 20px 0;
 }
 
 .form__owner {
@@ -141,12 +141,12 @@
   }
 
   .form__submit {
-    font-size: 20px;
     width: auto;
     min-width: 285px;
     min-height: 52px;
     margin-bottom: 0;
     margin-right: 56px;
+    font-size: 20px;
   }
 }
 
@@ -164,8 +164,8 @@
 
   .form__goal {
     grid-column: 2 / 3;
-    margin: 0 110px 0 0;
     width: auto;
+    margin: 0 110px 0 0;
   }
 
   .form__owner {

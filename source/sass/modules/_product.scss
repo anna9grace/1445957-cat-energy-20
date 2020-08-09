@@ -1,14 +1,14 @@
 .product {
-  border-top: 1px solid #ebebeb;
   min-height: 209px;
+  border-top: 1px solid $third-border-color;
 }
 
 .product__name {
   @include font-sizes(16px, 20px);
-  color: $font-color-medium;
-  text-transform: uppercase;
   display: inline-block;
   width: 76px;
+  color: $font-color-medium;
+  text-transform: uppercase;
 }
 
 .product__container {

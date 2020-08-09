@@ -1,9 +1,9 @@
 .page-header__wrapper {
+  display: flex;
+  align-items: center;
   min-height: 41px;
   max-width: 280px;
   margin: 12px auto;
-  display: flex;
-  align-items: center;
 }
 
 .page-header__menu-toggle {

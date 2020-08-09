@@ -1,27 +1,27 @@
 .show-more {
   @include font-sizes(12px, 16px);
-  font-family: $secondary-font-family;
   padding-top: 26px;
   text-align: center;
-  border-bottom: 1px solid #ebebeb;
+  font-family: $secondary-font-family;
+  border-bottom: 1px solid $third-border-color;
 }
 
 .show-more__title {
   @include font-sizes(16px, 20px);
   display: flex;
   flex-direction: column;
+  margin: 0;
   font-family: $main-font-family;
   text-transform: uppercase;
   color: $additional-dark;
-  margin: 0;
 
   &::before {
     @include sizes(30px, 30px);
     content: "";
     display: inline-block;
-    background: url("../../img/icon-plus-mobile.svg");
     align-self: center;
     margin-bottom: 23px;
+    background: url("../../img/icon-plus-mobile.svg");
   }
 }
 
@@ -36,8 +36,8 @@
   }
 
   .show-more__container {
-    border: 2px solid $basic-bg-color;
     padding: 49px 36px 36px 36px;
+    border: 2px solid $basic-bg-color;
   }
 
   .show-more__title {

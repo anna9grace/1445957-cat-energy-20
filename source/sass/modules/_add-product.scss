@@ -1,7 +1,7 @@
 .add-product {
+  padding: 13px 0 19px 0;
   font-family: $secondary-font-family;
   line-height: 20px;
-  padding: 13px 0 19px 0;
   border-top: 1px solid $basic-border-color;
 
   &:last-of-type {
@@ -17,11 +17,11 @@
 
 .add-product__name {
   @include font-sizes(16px, 16px);
+  margin: 0;
   font-family: $main-font-family;
   font-weight: 400;
   text-transform: uppercase;
   color: $font-color-medium;
-  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,7 +79,7 @@
 
   .add-product__pack {
     flex-basis: 287px;
-    text-align: left;
     justify-content: space-between;
+    text-align: left;
   }
 }

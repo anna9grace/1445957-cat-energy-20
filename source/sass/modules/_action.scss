@@ -4,9 +4,9 @@
   font-family: $secondary-font-family;
 
   @include font-sizes(16px, 20px);
+  padding: 43px 55px;
   text-align: center;
   color: $font-color-light;
-  padding: 43px 55px;
 }
 
 .action__text {
@@ -17,10 +17,10 @@
   &::before {
     @include sizes(59px, 78px);
     content: "";
-    background: url("../../img/icon-gift.svg") no-repeat;
+    align-self: center;
     margin-bottom: 45px;
     margin-top: 18px;
-    align-self: center;
+    background: url("../../img/icon-gift.svg") no-repeat;
   }
 }
 

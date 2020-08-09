@@ -1,36 +1,36 @@
 .toggles {
   @include font-sizes(16px, 20px);
-  text-align: center;
-  text-transform: uppercase;
-  color: $font-color-dark;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color-dark;
 }
 
 .toggles__bar {
   @include sizes(84px, 14px);
   display: flex;
+  padding: 0 6px;
+  margin: 0 16px 0 19px;
   background-color: #ffffff;
   border: 1px solid $basic-border-color;
   border-radius: 6px;
-  padding: 0 6px;
-  margin: 0 16px 0 19px;
 }
 
 .toggles__name {
   @include font-inherit;
+  padding: 0;
   text-transform: uppercase;
   border: none;
   background-color: inherit;
-  padding: 0;
 }
 
 .toggles__pointer {
   @include sizes(35px, 6px);
+  margin: auto auto auto 0;
   background: $basic-theme-color;
   border-radius: 6px;
-  margin: auto auto auto 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,23 +40,45 @@
 
   .toggles__bar {
     @include sizes(428px, 6px);
-    border-width: 3px;
     margin: 0 22px;
+    border-width: 3px;
   }
 
   .toggles__name {
     border-bottom: 1px dotted rgba($color: $font-color-dark, $alpha: 0.4);
+
+    &:hover,
+    &:focus {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 
   .toggles__pointer {
     @include sizes(34px, 34px);
-    border: 13px solid $font-color-light;
-    border-radius: 50%;
     margin-top: -17px;
     margin-left: auto;
+    border: 13px solid $font-color-light;
+    border-radius: 50%;
     box-shadow:
       0 0 0 1px $basic-border-color,
-      0 3px 4px 0 rgba($font-color-dark, 0.2);
+      0 1px 2px 0 rgba($font-color-dark, 0.2);
+
+    &:hover,
+    &:focus {
+      box-shadow:
+        0 0 0 1px $basic-border-color,
+        0 3px 4px 0 rgba($font-color-dark, 0.2);
+    }
+
+    &:active {
+      box-shadow:
+        0 0 0 1px $basic-theme-color,
+        0 3px 4px 0 rgba($font-color-dark, 0.2);
+    }
   }
 }
 

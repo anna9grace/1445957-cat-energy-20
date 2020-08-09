@@ -3,9 +3,9 @@
 }
 
 .page-main__text {
+  margin: 37px 6px 39px 0;
   text-transform: uppercase;
   color: $font-color-dark;
-  margin: 37px 6px 39px 0;
 }
 
 .page-main__programm {
@@ -23,10 +23,10 @@
 
   .page-main__text {
     @include font-sizes(20px, 30px);
+    max-width: 389px;
     padding-left: 40px;
     margin-top: 55px;
     margin-bottom: 64px;
-    max-width: 389px;
   }
 }
 

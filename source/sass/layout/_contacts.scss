@@ -1,7 +1,7 @@
 .contacts {
+  position: relative;
   font-family: $secondary-font-family;
   line-height: 20px;
-  position: relative;
   background-color: $basic-bg-color;
 
   &--main-page {
@@ -19,15 +19,15 @@
 .contacts__invitation {
   @include font-sizes(16px, 20px);
   flex-basis: 142px;
+  margin: 0;
   font-family: $main-font-family;
   text-transform: uppercase;
   color: $additional-dark;
-  margin: 0;
 }
 
 .contacts__adress {
-  margin: 0;
   flex-basis: 50%;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,9 +40,9 @@
   }
 
   .contacts__adress {
+    flex-basis: 173px;
     margin-left: auto;
     text-align: right;
-    flex-basis: 173px;
     font-size: 16px;
 
     span {
@@ -54,12 +54,12 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    width: 570px;
     position: absolute;
+    width: 570px;
     padding-left: 76px;
     padding-right: 89px;
-    transform: translateY(195px) translateY(-50%);
     background-color: $font-color-light;
+    transform: translateY(195px) translateY(-50%);
   }
 
   .contacts__adress {

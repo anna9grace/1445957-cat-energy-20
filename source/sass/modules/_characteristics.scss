@@ -1,9 +1,9 @@
 .characteristics {
   @include font-sizes(12px, 13px);
-  font-family: $secondary-font-family;
   width: 100%;
   margin-top: 11px;
   margin-left: -2px;
+  font-family: $secondary-font-family;
 }
 
 .characteristics__name {
@@ -17,8 +17,8 @@
 @media (min-width: $tablet-width) {
   .characteristics {
     @include font-sizes(16px, 29px);
-    border-collapse: collapse;
     margin-top: 12px;
+    border-collapse: collapse;
   }
 
   .characteristics__name {

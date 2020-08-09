@@ -1,22 +1,22 @@
 .example {
-  background-color: #eaeaea;
   padding-top: 29px;
   padding-bottom: 16px;
+  background-color: #eaeaea;
 }
 
 .example__text {
-  font-family: $secondary-font-family;
   margin: 36px 0 25px 0;
+  font-family: $secondary-font-family;
 }
 
 .example__costs {
+  display: flex;
   flex-basis: 280px;
-  line-height: 27px;
+  justify-content: center;
   margin-top: 30px;
+  line-height: 27px;
   text-transform: uppercase;
   color: $font-color-dark;
-  display: flex;
-  justify-content: center;
 
   dd {
     margin: 0;
@@ -50,11 +50,11 @@
 
   .example__costs {
     display: inline;
-    font-size: 20px;
     flex-basis: 175px;
-    text-align: right;
     margin: 0;
     margin-left: auto;
+    font-size: 20px;
+    text-align: right;
   }
 
   .example__text {
@@ -91,7 +91,7 @@
   }
 
   .example__text {
-    margin: 151px 0 65px 0;
+    margin: 147px 0 65px 0;
   }
 
   .example__picture {
@@ -106,10 +106,10 @@
   }
 
   .example__costs {
+    display: flex;
+    flex-basis: auto;
     margin-left: 0;
     margin-top: 59px;
-    flex-basis: auto;
-    display: flex;
   }
 
 
