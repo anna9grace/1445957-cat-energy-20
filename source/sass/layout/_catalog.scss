@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 27px;
+  margin-top: 27px;
   margin-bottom: 27px;
 }
 
@@ -10,28 +10,30 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    border: none;
+    margin-top: 32px;
+    margin-bottom: 65px;
   }
 
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 768px - (30px * 2);
     column-gap: 60px;
     row-gap: 141px;
-    max-width: 768px - (30px * 2);
     margin: 164px auto 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
+    margin-top: 49px;
     margin-bottom: 76px;
   }
 
   .catalog__list {
     grid-template-columns: repeat(4, 1fr);
+    max-width: 1440px - (110px * 2);
     column-gap: 80px;
     row-gap: 144px;
-    max-width: 1440px - (110px * 2);
   }
 }

@@ -1,5 +1,5 @@
 .strategies {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .strategies__list {
@@ -7,47 +7,106 @@
 }
 
 .strategies__item {
+  position: relative;
+  padding: 20px 19px 0 19px;
   background-color: $basic-bg-color;
-  padding: 18px 19px;
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
+  }
+
+  &::before {
+    @include sizes(68px, 53px);
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 21px;
+    left: 11px;
+    background-color: $basic-theme-color;
   }
 }
 
 .strategies__title,
 .strategies__link {
-  text-transform: uppercase;
-  color: $font-color-dark;
-
   @include font-sizes(24px, 37px);
   font-weight: 400;
+  text-transform: uppercase;
+  color: $font-color-dark;
 }
 
 .strategies__title {
-  margin: 0;
+  margin: 10px 0 30px 71px;
 }
 
 .strategies__description {
+  margin-bottom: 22px;
   font-family: $secondary-font-family;
 }
 
 .strategies__link {
   @include font-sizes(16px, 16px);
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $secondary-border-color;
+
+  &::after {
+    @include sizes(24px, 10px);
+    content: "";
+    margin-left: 26px;
+    background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.strategies__link:hover,
+.strategies__link:focus,
+.strategies__link:active {
+  &::after {
+    width: 32px;
+    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
+}
 
 @media (min-width: $tablet-width) {
+  .strategies {
+    margin-bottom: 44px;
+  }
+
   .strategies__item {
-    padding: 77px 280px 57px 52px;
+    padding: 77px 280px 37px 52px;
 
     &:not(:last-of-type) {
       margin-bottom: 30px;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      @include sizes(246px, 211px);
+      content: "";
+      position: absolute;
+      display: inline-block;
+      right: 37px;
+      top: 82px;
+      background-color: $basic-theme-color;
     }
   }
 
   .strategies__title {
     @include font-sizes(36px, 36px);
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .strategies__item--mass {
+    padding-right: 313px;
   }
 
   .strategies__description {
@@ -56,10 +115,16 @@
 
   .strategies__link {
     @include font-sizes(20px, 30px);
+    margin-top: 31px;
+    border: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .strategies {
+    margin-bottom: 70px;
+  }
+
   .strategies__list {
     display: flex;
     flex-wrap: wrap;
@@ -73,5 +138,29 @@
     &:not(:last-of-type) {
       margin-bottom: 0;
     }
+
+    &::before {
+      @include sizes(100px, 100px);
+      display: inline-block;
+      top: 50px;
+      left: 52px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .strategies__link {
+    margin-top: 9px;
+  }
+
+  .strategies__title {
+    margin-left: 160px;
+  }
+
+  .strategies__description {
+    margin-top: 74px;
+    margin-bottom: 0;
   }
 }

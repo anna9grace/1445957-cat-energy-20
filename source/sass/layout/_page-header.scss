@@ -1,8 +1,13 @@
 .page-header__wrapper {
-  min-height: 65px;
+  display: flex;
+  align-items: center;
+  min-height: 41px;
   max-width: 280px;
-  padding: 12px 0;
-  margin: auto;
+  margin: 12px auto;
+}
+
+.page-header__menu-toggle {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,12 +23,16 @@
   }
 
   .page-header__wrapper {
-    margin: 0;
+    margin: 21px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1440px - (110px * 2);
+  }
+
+  .page-header__wrapper {
+    margin-top: 52px;
   }
 }

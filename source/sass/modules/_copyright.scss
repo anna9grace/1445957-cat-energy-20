@@ -1,9 +1,23 @@
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 0;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $secondary-border-color;
 }
 
 .copyright__link {
   font-family: $secondary-font-family;
   font-size: 16px;
+  line-height: 0;
+
+  &:not(:last-of-type) {
+    margin-right: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    border: none;
+  }
 }

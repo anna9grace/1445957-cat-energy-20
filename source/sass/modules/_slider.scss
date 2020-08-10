@@ -1,11 +1,43 @@
 .slider__list {
   @include list-reset;
+  text-align: left;
 }
 
 .slider__item {
-  text-align: center;
+  img {
+    width: 280px;
+    height: 238px;
+    object-fit: cover;
+  }
 }
 
 .slider__item--after {
   display: none;
+}
+
+.slider__toggles {
+  margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles {
+    margin-top: 14px;
+  }
+
+  .slider__item {
+    margin: auto;
+    text-align: center;
+
+    // изменить на соответствующую картинку, пока для наглядных размеров
+    img {
+      width: 708px;
+      height: 493px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    margin-top: 54px;
+  }
 }

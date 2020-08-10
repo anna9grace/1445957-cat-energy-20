@@ -1,16 +1,37 @@
 .button {
   @include font-sizes(16px, 20px);
-  font-family: $main-font-family;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
   text-align: center;
   vertical-align: middle;
+  font-family: $main-font-family;
   text-transform: uppercase;
   background-color: $basic-theme-color;
   color: $font-color-light;
-  width: 100%;
-  display: inline-block;
 
-  &--light {
-    background-color: $basic-bg-color;
-    color: $main-font-color;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-active;
+  }
+
+  &:active {
+    color: rgba($font-color-light, 0.3);
+  }
+}
+
+.button--light {
+  background-color: $basic-bg-color;
+  color: $main-font-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $third-border-color;
+  }
+
+  &:active {
+    color: rgba($main-font-color, 0.3);
   }
 }

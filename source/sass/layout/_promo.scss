@@ -1,58 +1,75 @@
 .promo {
-  text-align: center;
   position: relative;
   margin-bottom: 22px;
+  text-align: center;
 }
 
 .promo__title {
   @include font-sizes(36px, 36px);
-  font-weight: 400;
   margin: 0;
+  font-weight: 400;
 }
 
 .promo__slogan {
+  margin-top: 25px;
   line-height: 14px;
   text-transform: uppercase;
 }
 
 .promo__link {
-  @include font-sizes(14px, 18px);
+  @include font-sizes(14px, 20px);
+  position: relative;
+  z-index: 2;
 }
 
 .promo__wrapper {
-  background: #63a73a url("../../img/index-background-mobile@1x.jpg") center bottom no-repeat;
-  color: $font-color-light;
   min-height: 305px;
   padding: 27px 35px;
   margin-bottom: 135px;
+  background: #63a73a url("../../img/index-background-mobile@1x.jpg") center bottom no-repeat;
+  color: $font-color-light;
+}
+
+.promo__container {
+  position: relative;
 }
 
 .promo__picture {
   position: absolute;
-  bottom: 25px;
+  bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
+    margin: 30px 117px 526px 117px;
     text-align: left;
-    margin: 62px 117px 526px 117px;
+  }
 
-    .promo__link {
-      width: 244px;
-    }
+  .promo__link {
+    width: 244px;
+    margin-left: -5px;
+    padding: 17px 20px;
+    font-size: 20px;
   }
 
   .promo__picture {
-    bottom: -280px;
+    bottom: -525px;
+    right: -10px;
+    // изменить картинку на соответствующую, размеры для наглядности
+    @include sizes(709px, 609px);
   }
 
   .promo__wrapper {
+    min-height: 0;
     padding: 0;
     margin-bottom: 49px;
     color: $font-color-dark;
-    min-height: 0;
-    width: 415px;
     background: none;
+  }
+
+  .promo__container {
+    width: 534px;
+    margin: auto;
   }
 
   .promo__title {
@@ -61,11 +78,32 @@
 
   .promo__slogan {
     @include font-sizes(20px, 20px);
+    margin-top: 43px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    margin: 111px 190px 267px 190px;
+    margin: 83px 190px 267px 190px;
+  }
+
+  .promo__container {
+    width: 1060px;
+  }
+
+  .promo__title,
+  .promo__slogan {
+    width: 575px;
+  }
+
+  .promo__link {
+    margin-left: 0;
+  }
+
+  .promo__picture {
+    bottom: -135px;
+    right: 113px;
+    // изменить картинку на соответствующую, размеры для наглядности
+    @include sizes(552px, 499px);
   }
 }
