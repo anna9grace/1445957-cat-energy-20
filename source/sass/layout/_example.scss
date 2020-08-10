@@ -44,7 +44,7 @@
 @media (min-width: $tablet-width) {
   .example {
     padding-top: 43px;
-    padding-bottom: 46px;
+    padding-bottom: 48px;
     background-image: linear-gradient(to bottom, $font-color-light 57%, #eaeaea 57%);
   }
 
@@ -69,7 +69,7 @@
   }
 
   .example__picture {
-    margin-top: 112px;
+    margin-top: 92px;
   }
 }
 
@@ -83,7 +83,7 @@
   .example__wrapper {
     display: grid;
     grid-template-columns: 438px 1fr;
-    column-gap: 86px;
+    column-gap: 170px;
   }
 
   .example__title {

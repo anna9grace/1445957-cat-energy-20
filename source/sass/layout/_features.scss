@@ -16,6 +16,26 @@
     @include sizes(60px, 60px);
     content: "";
     background-color: $basic-theme-color;
+    background-image: url("../../img/icon-leaf.svg");
+    background-position: center center;
+  }
+}
+
+.features__item--form {
+  &::before {
+    background-image: url("../../img/icon-powder.svg");
+  }
+}
+
+.features__item--usage {
+  &::before {
+    background-image: url("../../img/icon-dining.svg");
+  }
+}
+
+.features__item--results {
+  &::before {
+    background-image: url("../../img/icon-clock.svg");
   }
 }
 

@@ -1,14 +1,29 @@
+.logo__icon {
+  width: 190px;
+  object-fit: cover;
+}
+
 .logo--footer {
+  width: 128px;
+  object-fit: cover;
   padding: 37px 0 30px 0;
 }
 
 @media (min-width: $tablet-width) {
+  .logo__icon {
+    width: 174px;
+  }
+
   .logo--footer {
     padding: 60px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .logo__icon {
+    width: 202px;
+  }
+
   .logo--footer {
     padding: 63px 0;
   }
