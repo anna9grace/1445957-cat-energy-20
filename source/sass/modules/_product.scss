@@ -24,7 +24,6 @@
   flex-basis: 140px;
 
   img {
-    @include sizes(140px, 144px);
     object-fit: contain;
   }
 }
@@ -42,7 +41,7 @@
   .product__container {
     position: relative;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 39px 40px 39px;
 
     &:not(.show-more__container) {
@@ -51,12 +50,8 @@
   }
 
   .product__picture {
-    margin-top: -71px;
-
-    img {
-      @include sizes(324px, 208px);
-      object-fit: cover;
-    }
+    margin: -74px -39px 0 -39px;
+    max-height: 208px;
   }
 
   .product__discription {
@@ -71,21 +66,17 @@
   .product__name {
     @include font-sizes(20px, 24px);
     width: 155px;
-    margin-top: 21px;
+    margin-top: 27px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product__name {
     @include font-sizes(20px, 21px);
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .product__picture {
-    margin-top: -69px;
-
-    img {
-      @include sizes(245px, 208px);
-    }
+    margin-top: -86px;
   }
 }

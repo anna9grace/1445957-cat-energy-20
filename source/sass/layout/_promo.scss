@@ -56,9 +56,9 @@
   }
 
   .promo__picture {
-    bottom: -525px;
-    right: -87px;
     width: 709px;
+    bottom: -525px;
+    margin-left: -89px;
   }
 
   .promo__wrapper {
@@ -103,8 +103,9 @@
   }
 
   .promo__picture {
-    bottom: -131px;
-    right: 141px;
     width: 552px;
+    bottom: -131px;
+    left: 50%;
+    margin-left: -162px;
   }
 }

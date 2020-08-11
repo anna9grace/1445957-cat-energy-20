@@ -9,6 +9,18 @@
   padding: 37px 0 30px 0;
 }
 
+.logo,
+.logo--footer {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .logo__icon {
     width: 174px;

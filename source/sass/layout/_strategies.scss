@@ -116,11 +116,12 @@
   }
 
   .strategies__item--mass {
+    padding-right: 313px;
+
     &::after {
       @include sizes(268px, 112px);
       top: 135px;
       left: 413px;
-      padding-right: 313px;
     }
   }
 

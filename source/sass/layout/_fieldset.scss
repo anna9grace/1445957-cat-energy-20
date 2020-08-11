@@ -21,6 +21,7 @@
 }
 
 .fieldset__text-wrapper {
+  position: relative;
   display: flex;
   justify-content: stretch;
   align-items: center;
@@ -43,10 +44,45 @@
   flex-grow: 1;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $basic-border-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $main-font-color;
+  }
+
+  &.error {
+    border-color: transparent;
+    outline: 2px solid $error-color;
+  }
 }
 
 .fieldset__text--icon {
+  padding-right: 45px;
   border-color: $basic-border-color;
+}
+
+.fieldset__text--icon + svg {
+  position: absolute;
+  right: 13px;
+}
+
+.fieldset__text--icon:active + svg,
+.fieldset__text--icon:focus + svg {
+  fill: $basic-theme-color;
+}
+
+.fieldset__text--icon.error + svg {
+  fill: $error-color;
 }
 
 .fieldset__option {

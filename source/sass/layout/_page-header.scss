@@ -6,8 +6,18 @@
   margin: 12px auto;
 }
 
-.page-header__menu-toggle {
+.page-header__menu {
   display: none;
+  height: 20px;
+  width: 19px;
+  margin-left: auto;
+  margin-right: 3px;
+  background: url("../../img/icon-close.svg") no-repeat;
+  border: none;
+
+  &--open {
+    background: url("../../img/icon-mobile-menu.svg") center center no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
