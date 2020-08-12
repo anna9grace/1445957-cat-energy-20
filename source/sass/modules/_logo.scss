@@ -9,11 +9,11 @@
   padding: 37px 0 30px 0;
 }
 
-.logo,
-.logo--footer {
+.logo {
   &:hover,
   &:focus {
     opacity: 0.8;
+    outline: none;
   }
 
   &:active {

@@ -9,6 +9,18 @@
   border-top: 1px solid $secondary-border-color;
 }
 
+.side-links__logo {
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .side-links__wrapper {
     display: flex;

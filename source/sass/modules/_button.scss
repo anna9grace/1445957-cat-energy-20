@@ -16,6 +16,10 @@
     background-color: $button-active;
   }
 
+  &:focus {
+    outline: 1px solid rgba($font-color-dark, 0.2);
+  }
+
   &:active {
     color: rgba($font-color-light, 0.3);
   }

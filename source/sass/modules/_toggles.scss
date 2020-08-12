@@ -24,6 +24,10 @@
   text-transform: uppercase;
   border: none;
   background-color: inherit;
+
+  &:focus {
+    outline: 1px solid rgba($font-color-dark, 0.2);
+  }
 }
 
 .toggles__pointer {
@@ -31,6 +35,19 @@
   margin: auto auto auto 0;
   background: $basic-theme-color;
   border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    box-shadow:
+      0 0 0 1px $basic-border-color,
+      0 3px 4px 0 rgba($font-color-dark, 0.2);
+  }
+
+  &:active {
+    box-shadow:
+      0 0 0 1px $basic-theme-color,
+      0 3px 4px 0 rgba($font-color-dark, 0.2);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -66,19 +83,6 @@
     box-shadow:
       0 0 0 1px $basic-border-color,
       0 1px 2px 0 rgba($font-color-dark, 0.2);
-
-    &:hover,
-    &:focus {
-      box-shadow:
-        0 0 0 1px $basic-border-color,
-        0 3px 4px 0 rgba($font-color-dark, 0.2);
-    }
-
-    &:active {
-      box-shadow:
-        0 0 0 1px $basic-theme-color,
-        0 3px 4px 0 rgba($font-color-dark, 0.2);
-    }
   }
 }
 

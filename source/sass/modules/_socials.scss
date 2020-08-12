@@ -10,17 +10,17 @@
   svg {
     fill: #666666;
   }
-}
 
-.socials__item:hover,
-.socials__item:focus {
-  svg {
+  &:hover svg,
+  &:focus-within svg {
     fill: $basic-theme-color;
   }
-}
 
-.socials__item:active {
-  svg {
+  &:focus-within a {
+    outline: none;
+  }
+
+  &:active svg {
     opacity: 0.3;
   }
 }
@@ -33,16 +33,12 @@
       width: 25px;
       height: auto;
     }
-  }
 
-  .socials__item--vk {
-    svg {
+    &--vk svg {
       width: 32px;
     }
-  }
 
-  .socials__item--facebook {
-    svg {
+    &--facebook svg {
       width: 29px;
     }
   }
