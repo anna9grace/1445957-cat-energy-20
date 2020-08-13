@@ -11,7 +11,7 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="index.html" aria-label="На главную">
+        <a class="logo" href="index.html" aria-label="На главную">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -40,14 +40,14 @@
     <main class="page-main">
 
       <div class="page-main__programm container">
-        <h1 class="page-main__title title">Подбор программы</h1>
+        <h1 class="title">Подбор программы</h1>
         <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
         <fieldset class="form__general form__fieldset fieldset">
-          <div class="form__general-container fieldset__container">
+          <div class="fieldset__container">
             <h3 class="visually-hidden">Общая информация</h3>
             <p class="fieldset__text-wrapper">
               <label for="namefield">Имя:*</label>
@@ -65,7 +65,7 @@
         </fieldset>
 
         <fieldset class="form__goal form__fieldset fieldset">
-          <div class="form__goal-container fieldset__container">
+          <div class="fieldset__container">
             <h3 class="visually-hidden">Выберите цель</h3>
             <input class="visually-hidden fieldset__radio-input" type="radio" name="goal" id="loosing" value="Похудение" checked>
             <label class="fieldset__option" for="loosing">Похудение</label>
@@ -84,14 +84,14 @@
             <p class="form__owner-wrapper fieldset__text-wrapper">
               <label for="emailfield">E-mail:*</label>
               <input class="fieldset__text fieldset__text--icon" type="email" name="email" id="emailfield" placeholder="kuklachev@gmail.com">
-              <svg width="22" height="14">
+              <svg width="23" height="14">
                 <use xlink:href="sprite.svg#mail-icon"></use>
               </svg>
             </p>
             <p class="form__owner-wrapper fieldset__text-wrapper">
               <label for="telfield">Телефон:*</label>
               <input class="fieldset__text fieldset__text--icon" type="tel" name="tel" id="telfield" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90">
-              <svg width="22" height="20">
+              <svg width="23" height="20">
                 <use xlink:href="sprite.svg#tel-icon"></use>
               </svg>
             </p>

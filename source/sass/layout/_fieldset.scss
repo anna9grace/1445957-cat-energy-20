@@ -70,6 +70,10 @@
   padding-right: 45px;
   border-color: $basic-border-color;
 
+  svg {
+    fill: $font-color-medium;
+  }
+
   & + svg {
     position: absolute;
     right: 13px;
