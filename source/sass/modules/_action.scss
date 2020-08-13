@@ -1,12 +1,16 @@
 .action {
-  min-height: 289px;
-  background: $basic-theme-color url("../../img/gift-photo-mobile@1x.jpg") center center no-repeat;
-  font-family: $secondary-font-family;
-
   @include font-sizes(16px, 20px);
+  min-height: 289px;
   padding: 43px 55px;
   text-align: center;
+  background: $basic-theme-color url("../../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: cover;
+  font-family: $secondary-font-family;
   color: $font-color-light;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .action__text {
@@ -28,6 +32,11 @@
   .action {
     min-height: 200px;
     padding: 62px 122px 61px  88px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .action__text {
@@ -49,6 +58,11 @@
 @media (min-width: $desktop-width) {
   .action {
     padding: 62px 41px 30px 41px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .action__text {

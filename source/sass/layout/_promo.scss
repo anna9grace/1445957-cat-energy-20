@@ -27,16 +27,19 @@
   padding: 27px 35px;
   margin-bottom: 135px;
   background: #63a73a url("../../img/index-background-mobile@1x.jpg") center bottom no-repeat;
+  background-size: 100% auto;
   color: $font-color-light;
-}
 
-.promo__container {
-  position: relative;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__picture {
   position: absolute;
   bottom: 42px;
+  width: 280px;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,10 +56,9 @@
   }
 
   .promo__picture {
+    width: 709px;
     bottom: -525px;
-    right: -10px;
-    // изменить картинку на соответствующую, размеры для наглядности
-    @include sizes(709px, 609px);
+    margin-left: -89px;
   }
 
   .promo__wrapper {
@@ -101,9 +103,9 @@
   }
 
   .promo__picture {
-    bottom: -135px;
-    right: 113px;
-    // изменить картинку на соответствующую, размеры для наглядности
-    @include sizes(552px, 499px);
+    width: 552px;
+    bottom: -131px;
+    left: 50%;
+    margin-left: -162px;
   }
 }

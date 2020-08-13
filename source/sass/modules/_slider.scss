@@ -5,8 +5,8 @@
 
 .slider__item {
   img {
-    width: 280px;
     height: 238px;
+    margin: 0 auto;
     object-fit: cover;
   }
 }
@@ -28,16 +28,21 @@
     margin: auto;
     text-align: center;
 
-    // изменить на соответствующую картинку, пока для наглядных размеров
     img {
-      width: 708px;
-      height: 493px;
+      height: 511px;
+      object-fit: contain;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__toggles {
-    margin-top: 54px;
+    margin-top: 38px;
+  }
+
+  .slider__item {
+    img {
+      object-fit: cover;
+    }
   }
 }

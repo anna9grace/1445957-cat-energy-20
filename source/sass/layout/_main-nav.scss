@@ -20,9 +20,12 @@
 }
 
 .main-nav__link:not(.main-nav__link--active) {
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 1px solid rgba($font-color-dark, 0.2);
   }
 
   &:active {

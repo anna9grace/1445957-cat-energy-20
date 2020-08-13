@@ -5,8 +5,20 @@
 
 .side-links__socials {
   @include list-reset;
-  padding: 19px 0;
+  padding: 20px 0 18px 0;
   border-top: 1px solid $secondary-border-color;
+}
+
+.side-links__logo {
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {

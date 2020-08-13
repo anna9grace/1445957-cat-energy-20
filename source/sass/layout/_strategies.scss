@@ -16,13 +16,31 @@
   }
 
   &::before {
-    @include sizes(68px, 53px);
+    @include sizes(50px, 50px);
     content: "";
     position: absolute;
-    display: inline-block;
-    top: 21px;
-    left: 11px;
+    top: 24px;
+    left: 22px;
+    border-radius: 50%;
     background-color: $basic-theme-color;
+  }
+
+  &::after {
+    @include sizes(36px, 50px);
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 29px;
+    background: url("../../img/icon-cat-slim.svg") no-repeat;
+  }
+}
+
+.strategies__item--mass {
+  &::after {
+    @include sizes(67px, 28px);
+    top: 35px;
+    left: 13px;
+    background: url("../../img/icon-cat-pro.svg") no-repeat;
   }
 }
 
@@ -54,12 +72,16 @@
   &::after {
     @include sizes(24px, 10px);
     content: "";
-    margin-left: 26px;
+    margin-left: 18px;
     background: url("../../img/icon-right-arrow-long.svg") no-repeat;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 1px solid rgba($font-color-dark, 0.2);
   }
 }
 
@@ -85,17 +107,25 @@
     }
 
     &::before {
-      display: none;
+      @include sizes(200px, 200px);
+      top: 92px;
+      left: 447px;
     }
 
     &::after {
-      @include sizes(246px, 211px);
-      content: "";
-      position: absolute;
-      display: inline-block;
-      right: 37px;
-      top: 82px;
-      background-color: $basic-theme-color;
+      @include sizes(140px, 192px);
+      left: 476px;
+      top: 81px;
+    }
+  }
+
+  .strategies__item--mass {
+    padding-right: 313px;
+
+    &::after {
+      @include sizes(268px, 112px);
+      top: 135px;
+      left: 413px;
     }
   }
 
@@ -103,10 +133,6 @@
     @include font-sizes(36px, 36px);
     margin: 0;
     margin-bottom: 25px;
-  }
-
-  .strategies__item--mass {
-    padding-right: 313px;
   }
 
   .strategies__description {
@@ -117,6 +143,10 @@
     @include font-sizes(20px, 30px);
     margin-top: 31px;
     border: 0;
+
+    &::after {
+      margin-left: 27px;
+    }
   }
 }
 
@@ -141,13 +171,22 @@
 
     &::before {
       @include sizes(100px, 100px);
-      display: inline-block;
-      top: 50px;
+      top: 48px;
       left: 52px;
     }
 
     &::after {
-      display: none;
+      @include sizes(70px, 97px);
+      left: 67px;
+      top: 41px;
+    }
+  }
+
+  .strategies__item--mass {
+    &::after {
+      @include sizes(134px, 56px);
+      top: 68px;
+      left: 32px;
     }
   }
 

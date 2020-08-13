@@ -6,4 +6,40 @@
 
 .socials__item {
   margin: 0 18px;
+
+  svg {
+    fill: #666666;
+  }
+
+  &:hover svg,
+  &:focus-within svg {
+    fill: $basic-theme-color;
+  }
+
+  &:focus-within a {
+    outline: none;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials__item {
+    margin: 0 14px;
+
+    svg {
+      width: 25px;
+      height: auto;
+    }
+
+    &--vk svg {
+      width: 32px;
+    }
+
+    &--facebook svg {
+      width: 29px;
+    }
+  }
 }
