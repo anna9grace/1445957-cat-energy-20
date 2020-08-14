@@ -6,21 +6,18 @@
 
 .socials__item {
   margin: 0 18px;
+  color: #666666;
 
-  svg {
-    fill: #666666;
-  }
-
-  &:hover svg,
-  &:focus-within svg {
-    fill: $basic-theme-color;
+  &:hover,
+  &:focus-within {
+    color: $basic-theme-color;
   }
 
   &:focus-within a {
     outline: none;
   }
 
-  &:active svg {
+  &:active {
     opacity: 0.3;
   }
 }
