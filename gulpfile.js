@@ -78,7 +78,6 @@ const copy = () => {
     "source/img/**",
     "source/js/**",
     "source/*.ico",
-    "source/*.html",
   ], {
     base: "source"
   })
@@ -87,9 +86,20 @@ const copy = () => {
 
 exports.copy = copy;
 
+const html = () => {
+  return gulp.src([
+    "source/*.html"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+};
+
+exports.html = html;
+
 
 const build = gulp.series(
-  clean, copy, styles
+  clean, copy, html, styles
 );
 
 exports.build = build;
@@ -112,11 +122,19 @@ const server = (done) => {
 exports.server = server;
 
 
+const reload = (done) => {
+  sync.reload();
+  done();
+};
+
+exports.reload = reload;
+
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html", "reload"));
 };
 
 exports.default = gulp.series(
