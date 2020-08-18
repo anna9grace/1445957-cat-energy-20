@@ -107,7 +107,8 @@
     box-shadow: 0 0 0 1px $basic-border-color;
   }
 
-  &:active {
+  &:active,
+  .disabled + & {
     opacity: 0.3;
   }
 
@@ -121,6 +122,11 @@
 
   .fieldset__radio-input:checked + &::before {
     background-color: $basic-theme-color;
+  }
+
+  .fieldset__radio-input.disabled + &::before {
+    background-color: white;
+    box-shadow: 0 0 0 1px #bababa;
   }
 }
 
@@ -158,7 +164,8 @@
     display: inline-block;
   }
 
-  &:active {
+  &:active,
+  .disabled + & {
     opacity: 0.3;
   }
 
@@ -168,6 +175,14 @@
 
   .fieldset__check-input:focus + &::before {
     outline: 2px solid $basic-theme-color;
+  }
+
+  .fieldset__check-input.disabled + &::before {
+    outline: none;
+  }
+
+  .fieldset__check-input.disabled + &::after {
+    display: none;
   }
 }
 

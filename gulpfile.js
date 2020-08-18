@@ -11,7 +11,7 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const webp = require("gulp-webp");
-const uglify = require("gulp-uglify");
+const terser = require("gulp-terser");
 const htmlmin = require("gulp-htmlmin");
 
 // Styles
@@ -101,7 +101,7 @@ exports.html = html;
 
 const scripts = () => {
   return gulp.src("source/js/**/*.js")
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
 };

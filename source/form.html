@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link href="css/styles.min.css" rel="stylesheet">
   </head>
 
@@ -91,7 +92,7 @@
             <p class="form__owner-wrapper fieldset__text-wrapper">
               <label for="telfield">Телефон:*</label>
               <input class="fieldset__text fieldset__text--icon" type="tel" name="tel" id="telfield" pattern="[8]{1}\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8 (960) 900-60-90">
-              <svg width="23" height="20">
+              <svg width="23" height="21">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </p>
@@ -181,7 +182,7 @@
           <div class="side-links__copyright copyright">
             <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
-              <svg width="27" height="34" alt="Логотип HTML Academy">
+              <svg width="27" height="34" aria-label="Логотип HTML Academy">
                 <use xlink:href="img/sprite.svg#icon-academy"></use>
               </svg>
             </a>
