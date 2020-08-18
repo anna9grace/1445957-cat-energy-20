@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const webp = require("gulp-webp");
 const uglify = require("gulp-uglify");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -92,6 +93,7 @@ const html = () => {
   ], {
     base: "source"
   })
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 };
 
