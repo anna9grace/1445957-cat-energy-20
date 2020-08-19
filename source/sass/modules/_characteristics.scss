@@ -1,8 +1,6 @@
 .characteristics {
   @include font-sizes(12px, 13px);
   width: 100%;
-  margin-top: 11px;
-  margin-left: -2px;
   font-family: $secondary-font-family;
 }
 
@@ -17,7 +15,6 @@
 @media (min-width: $tablet-width) {
   .characteristics {
     @include font-sizes(16px, 29px);
-    margin-top: 12px;
     border-collapse: collapse;
   }
 
@@ -28,11 +25,5 @@
   .characteristics__name,
   .characteristics__value {
     border-bottom: 1px solid $basic-border-color;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .characteristics {
-    margin-top: 16px;
   }
 }

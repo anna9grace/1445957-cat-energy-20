@@ -6,35 +6,38 @@
 
 .example__text {
   margin: 36px 0 25px 0;
+  padding-right: 1px;
   font-family: $secondary-font-family;
 }
 
-.example__costs {
-  display: flex;
-  flex-basis: 280px;
-  justify-content: center;
-  margin-top: 30px;
-  line-height: 27px;
-  text-transform: uppercase;
-  color: $font-color-dark;
-
-  dd {
-    margin: 0;
-  }
-}
-
 .example__stats {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr max-content;
   justify-content: center;
   align-items: center;
-  margin: 0;
 }
 
 .example__stats-item {
-  &:first-of-type {
+  margin-bottom: 30px;
+
+  &:nth-of-type(odd) {
     margin-right: auto;
   }
+}
+
+.example__costs {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: $font-color-dark;
+}
+
+.example__costs-amount {
+  margin: 0;
+  min-width: max-content;
+  align-self: center;
 }
 
 .example__picture {
@@ -48,13 +51,8 @@
     background-image: linear-gradient(to bottom, $font-color-light 57%, #eaeaea 57%);
   }
 
-  .example__costs {
-    display: inline;
-    flex-basis: 175px;
-    margin: 0;
-    margin-left: auto;
-    font-size: 20px;
-    text-align: right;
+  .example__stats {
+    grid-template-columns: 1fr max-content 300px;
   }
 
   .example__text {
@@ -68,14 +66,23 @@
     }
   }
 
+  .example__costs {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+    display: inline;
+    margin: 0 0 30px auto;
+    font-size: 20px;
+    text-align: right;
+  }
+
   .example__picture {
-    margin-top: 92px;
+    margin-top: 62px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    padding: 21px 110px 67px 110px;
+    padding: 21px 110px 27px;
     margin-top: -50px;
     background-image: linear-gradient(to bottom, #ffffff 32%, #eaeaea 32%);
   }
@@ -91,7 +98,24 @@
   }
 
   .example__text {
-    margin: 147px 0 65px 0;
+    margin: 148px 0 57px;
+  }
+
+  .example__stats {
+    justify-content: start;
+  }
+
+  .example__costs {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-top: 28px;
+  }
+
+  .example__costs-amount {
+    margin-left: 63px;
   }
 
   .example__picture {
@@ -103,21 +127,5 @@
     img {
       margin-right: -94px;
     }
-  }
-
-  .example__costs {
-    display: flex;
-    flex-basis: auto;
-    margin-left: 0;
-    margin-top: 59px;
-  }
-
-
-  .example__costs-amount {
-    margin-left: 61px;
-  }
-
-  .example__stats {
-    justify-content: flex-start;
   }
 }

@@ -32,6 +32,7 @@
   }
 
   label {
+    max-width: 94px;
     flex-shrink: 0;
   }
 }
@@ -100,6 +101,7 @@
   &::before {
     @include sizes(30px, 30px);
     content: "";
+    flex-shrink: 0;
     margin-right: 15px;
     border: 8px solid #ffffff;
     background-color: #ffffff;
@@ -143,6 +145,7 @@
   &::before {
     @include sizes(30px, 30px);
     content: "";
+    flex-shrink: 0;
     margin-right: 15px;
     background-color: #ffffff;
     box-shadow: 0 0 0 1px $basic-border-color;
@@ -154,10 +157,10 @@
     display: none;
     position: absolute;
     left: 7px;
-    top: 8px;
+    top: 50%;
     border-left: 2px solid $basic-theme-color;
     border-bottom: 2px solid $basic-theme-color;
-    transform: rotate(-45deg);
+    transform: translateY(-60%) rotate(-45deg);
   }
 
   .fieldset__check-input:checked + &::after {
@@ -205,6 +208,10 @@
 
   .fieldset__text-wrapper {
     margin-bottom: 22px;
+
+    label {
+      max-width: 200px;
+    }
   }
 
   .fieldset__option {
@@ -225,7 +232,6 @@
 
     &::after {
       left: 12px;
-      top: 12px;
     }
   }
 }

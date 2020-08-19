@@ -9,11 +9,8 @@
 .strategies__item {
   position: relative;
   padding: 20px 19px 0 19px;
+  margin-bottom: 20px;
   background-color: $basic-bg-color;
-
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
 
   &::before {
     @include sizes(50px, 50px);
@@ -71,6 +68,7 @@
 
   &::after {
     @include sizes(24px, 10px);
+    min-width: 24px;
     content: "";
     margin-left: 18px;
     background: url("../../img/right-arrow-long.svg") no-repeat;
@@ -101,10 +99,7 @@
 
   .strategies__item {
     padding: 77px 280px 37px 52px;
-
-    &:not(:last-of-type) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
 
     &::before {
       @include sizes(200px, 200px);
@@ -152,7 +147,8 @@
 
 @media (min-width: $desktop-width) {
   .strategies {
-    margin-bottom: 70px;
+    min-height: 374px;
+    margin-bottom: 40px;
   }
 
   .strategies__list {
@@ -162,12 +158,12 @@
   }
 
   .strategies__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 374px;
+    justify-content: space-between;
     flex-basis: 570px;
     padding-right: 52px;
-
-    &:not(:last-of-type) {
-      margin-bottom: 0;
-    }
 
     &::before {
       @include sizes(100px, 100px);
@@ -196,10 +192,11 @@
 
   .strategies__title {
     margin-left: 160px;
+    margin-bottom: 41px;
   }
 
   .strategies__description {
-    margin-top: 74px;
+    margin-top: auto;
     margin-bottom: 0;
   }
 }

@@ -1,7 +1,9 @@
 .map {
   height: 362px;
+  width: 100%;
   background: url("../../img/bg-map-mobile@1x.jpg") no-repeat;
   background-size: cover;
+  overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/bg-map-mobile@2x.jpg");
