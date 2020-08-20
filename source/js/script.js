@@ -1,7 +1,7 @@
 var menuToggle = document.querySelector(".page-header__menu");
 var menu = document.querySelector(".main-nav");
 
-var mobile = window.matchMedia("(max-width: 320px)");
+var mobile = window.matchMedia("(max-width: 767px)");
 
 if (mobile.matches) {
   menu.classList.add("hidden");

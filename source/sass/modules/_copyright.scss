@@ -1,19 +1,20 @@
 .copyright {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px 0;
   border-top: 1px solid $secondary-border-color;
 }
 
 .copyright__link {
   display: flex;
+  width: 100%;
   align-items: center;
   font-family: $secondary-font-family;
   font-size: 16px;
 
   svg {
-    margin-left: 138px;
+    min-width: max-content;
+    margin-left: auto;
     fill: #666666;
   }
 

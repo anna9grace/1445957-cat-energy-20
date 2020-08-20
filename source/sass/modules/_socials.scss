@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 330px;
 }
 
 .socials__item {
-  margin: 0 18px;
+  margin: 5px 18px;
   color: #666666;
 
   &:hover,
@@ -24,7 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .socials__item {
-    margin: 0 14px;
+    margin: 5px 14px;
 
     svg {
       width: 25px;
