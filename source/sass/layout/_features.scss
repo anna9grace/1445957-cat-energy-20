@@ -76,6 +76,10 @@
       content: counter(number);
       z-index: -1;
     }
+
+    &:first-child::after {
+      padding-right: 15px;
+    }
   }
 
   .features__text {
