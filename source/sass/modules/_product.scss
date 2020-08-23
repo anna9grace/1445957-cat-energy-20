@@ -59,6 +59,7 @@
 @media (min-width: $tablet-width) {
   .product {
     min-height: 430px;
+    width: 324px;
   }
 
   .product__container {
@@ -103,6 +104,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
+
   .product__name {
     line-height: 21px;
   }

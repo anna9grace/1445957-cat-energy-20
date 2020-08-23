@@ -1,7 +1,11 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "fonts.scss";
+@import "global.scss";
 @import "page.scss";
+@import "modules/hidden.scss";
+@import "modules/visually-hidden.scss";
+@import "modules/container.scss";
 @import "modules/button.scss";
 @import "modules/title.scss";
 @import "modules/title-line.scss";

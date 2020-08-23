@@ -32,12 +32,13 @@
 
 @media (min-width: $tablet-width) {
   .show-more {
+    order: 1;
     padding: 0;
+    border: 2px solid $basic-bg-color;
   }
 
   .show-more__container {
     padding: 49px 36px 36px 36px;
-    border: 2px solid $basic-bg-color;
   }
 
   .show-more__title {

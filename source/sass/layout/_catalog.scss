@@ -15,12 +15,15 @@
   }
 
   .catalog__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 768px - (30px * 2);
-    column-gap: 60px;
-    row-gap: 141px;
-    margin: 164px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 708px;
+    margin: 23px auto 0 auto;
+  }
+
+  .catalog__list-item {
+    margin-top: 141px;
   }
 }
 
@@ -31,9 +34,10 @@
   }
 
   .catalog__list {
-    grid-template-columns: repeat(4, 1fr);
     max-width: 1440px - (110px * 2);
-    column-gap: 80px;
-    row-gap: 144px;
+  }
+
+  .catalog__list-item {
+    margin-top: 142px;
   }
 }

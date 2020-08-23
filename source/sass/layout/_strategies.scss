@@ -1,5 +1,6 @@
 .strategies {
-  margin-bottom: 29px;
+  padding-bottom: 9px;
+  background-color: #ffffff;
 }
 
 .strategies__list {
@@ -94,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .strategies {
-    margin-bottom: 44px;
+    padding-bottom: 15px;
   }
 
   .strategies__item {
@@ -148,7 +149,8 @@
 @media (min-width: $desktop-width) {
   .strategies {
     min-height: 374px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-top: 60px;
   }
 
   .strategies__list {

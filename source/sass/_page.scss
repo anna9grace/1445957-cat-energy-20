@@ -1,45 +1,3 @@
-body {
-  min-width: 320px;
-  padding: 0;
-  margin: 0;
-  font-family: $main-font-family, $secondary-font-family, sans-serif;
-
-  @include font-sizes();
-  font-weight: 400;
-  color: $main-font-color;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.hidden {
-  display: none;
-}
-
 .page {
   height: 100%;
 }
@@ -50,24 +8,8 @@ img {
   min-height: 100%;
 }
 
-.container {
-  max-width: 320px - (20px * 2);
-  margin: 0 auto;
-  width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    max-width: 768px - (30px * 2);
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .container {
-    max-width: 1440px - (110px * 2);
-  }
-
-  .page__body {
+  .page__body--main {
     background-image: url("../../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, #ffffff 0%, #65a93c 0%);
     background-repeat: no-repeat;

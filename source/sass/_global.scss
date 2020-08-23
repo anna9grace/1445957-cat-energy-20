@@ -1,0 +1,26 @@
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font-family, $secondary-font-family, sans-serif;
+
+  @include font-sizes();
+  font-weight: 400;
+  color: $main-font-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

@@ -42,17 +42,19 @@
     @include font-sizes(18px, 24px);
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     width: 475px;
     font-weight: 400;
-    margin-right: -35px;
   }
 
   .main-nav__item {
     max-width: 190px;
     text-align: center;
-    margin-right: 35px;
+
+    &:not(:last-of-type) {
+      margin-right: 35px;
+    }
   }
 
   .main-nav__link {
