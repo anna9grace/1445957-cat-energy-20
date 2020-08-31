@@ -29,3 +29,23 @@ menuToggle.addEventListener("click", function(evt) {
     menuToggle.classList.toggle("page-header__menu--close");
   }
 )
+
+
+function initMap() {
+  var catEnergyOffice = {lat: 59.938797, lng: 30.323060};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: catEnergyOffice
+  });
+
+  var image = {
+    url: "../img/map-pin.png"
+  }
+
+  var marker = new google.maps.Marker({
+    position: catEnergyOffice,
+    map: map,
+    icon: image
+  });
+}

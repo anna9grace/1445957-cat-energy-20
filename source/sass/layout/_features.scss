@@ -81,7 +81,6 @@
       color: $basic-bg-color;
       counter-increment: number;
       content: counter(number);
-      z-index: -1;
     }
 
     &:first-child::after {
@@ -93,6 +92,7 @@
     @include font-sizes(16px, 24px);
     flex-basis: 130px;
     margin: 30px 0 0 0;
+    z-index: 1;
   }
 }
 
