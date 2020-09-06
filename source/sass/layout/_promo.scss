@@ -26,12 +26,12 @@
   min-height: 305px;
   padding: 27px 35px 140px 35px;
   margin-bottom: 135px;
-  background: #63a73a url("../../img/index-background-mobile@1x.jpg") center bottom no-repeat;
+  background: #63a73a url("../img/index-background-mobile@1x.jpg") center bottom no-repeat;
   background-size: 100% auto;
   color: $font-color-light;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
 

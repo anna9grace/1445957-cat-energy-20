@@ -4,6 +4,7 @@
 *.ai
 *.log
 *.pdf
+*.zip
 *.psd
 *.sublime*
 node_modules/

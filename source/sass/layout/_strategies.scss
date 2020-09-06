@@ -29,7 +29,7 @@
     position: absolute;
     top: 21px;
     left: 29px;
-    background: url("../../img/cat-slim.svg") no-repeat;
+    background: url("../img/cat-slim.svg") no-repeat;
   }
 }
 
@@ -38,7 +38,7 @@
     @include sizes(67px, 28px);
     top: 35px;
     left: 13px;
-    background: url("../../img/cat-pro.svg") no-repeat;
+    background: url("../img/cat-pro.svg") no-repeat;
   }
 }
 
@@ -72,7 +72,7 @@
     min-width: 24px;
     content: "";
     margin-left: 18px;
-    background: url("../../img/right-arrow-long.svg") no-repeat;
+    background: url("../img/right-arrow-long.svg") no-repeat;
   }
 
   &:active {
@@ -89,7 +89,7 @@
 .strategies__link:active {
   &::after {
     width: 32px;
-    background: url("../../img/right-arrow-verylong.svg") no-repeat;
+    background: url("../img/right-arrow-verylong.svg") no-repeat;
   }
 }
 
